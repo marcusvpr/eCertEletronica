@@ -1,0 +1,451 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/template/barcelona/template.xhtml">
+
+	<ui:define name="title">Certidão Eletrônica</ui:define>
+
+	<ui:define name="head">
+		<style type="text/css">
+.ui-selectoneradio.ui-grid-responsive .ui-grid-col-4,
+	.ui-selectmanycheckbox.ui-grid-responsive .ui-grid-col-4 {
+	padding-bottom: 10px;
+}
+</style>
+	</ui:define>
+
+	<ui:define name="content">
+
+		<h:outputScript name="static/js/print.min.js" target="head" />
+
+		<f:metadata>
+			<f:viewAction action="#{mpECartorioRJBean.inicializar}" />
+		</f:metadata>
+
+		<div class="ui-g">
+			<div class="ui-g-12">
+				<div class="card card-w-title">
+
+					<h:form id="frmCE">
+						<p:panel id="panCE"
+							header="Certidão Eletrônica #{mpECartorioRJBean.ambienteCE}" closable="true">
+							<p:ajax event="close" listener="#{mpECartorioRJBean.sairWS}" />
+
+							<p:growl id="messages" showDetail="false">
+        						<p:autoUpdate />
+    						</p:growl>
+							
+							<p:selectBooleanCheckbox id="checkPrtBalcao" itemLabel="Habilta Impressão ?" 
+																	value="#{mpECartorioRJBean.indImpressao}">
+            					<p:ajax update="messages" listener="#{mpECartorioRJBean.addMessage}" />
+        					</p:selectBooleanCheckbox>
+
+							<p:tabView id="tabViewCE" activeIndex="#{mpECartorioRJBean.tabViewIndex}">
+
+								<p:tab title="Arquivos - eCartorioRJ">
+
+									<div class="ContainerIndent ui-fluid">
+										<p:panel>
+											<div class="Container">
+												<div class="Container95 Responsive100">
+													<div class="Container100">
+														<p:panelGrid columns="11" layout="grid"
+															style="border:0px !important; background:none;"
+															styleClass="ui-panelgrid-blank">
+
+															<!-- p:outputLabel value="Serviço: " />
+															<p:inputMask id="servico" mask="9999" readonly="true"
+																value="#{mpECartorioRJBean.scOficServentiaECartorioRJ}"  -->
+															<p:outputLabel value="Data Inicial: " />
+															<p:calendar id="dataInicial" required="true" locale="pt"
+																timeZone="America/Sao_Paulo"
+																validatorMessage="Informar Data Inicial"
+																placeholder="Data Inicial" pattern="dd/MM/yyyy"
+																showOn="button" value="#{mpECartorioRJBean.dataInicio}" />
+															<p:outputLabel value="Data Final: " />
+															<p:calendar id="dataFinal" required="true" locale="pt"
+																timeZone="America/Sao_Paulo"
+																validatorMessage="Informar Data Final"
+																placeholder="Data Final" pattern="dd/MM/yyyy"
+																showOn="button" value="#{mpECartorioRJBean.dataFim}" />
+															<p:outputLabel />
+															<p:commandButton value="Executar Web Service"
+																icon="ui-icon-search" ajax="false"
+																action="#{mpECartorioRJBean.executaWS}" />
+															<p:selectBooleanCheckbox id="checkExigencia" 
+																itemLabel="Habilta Exigência ?" 
+																value="#{mpECartorioRJBean.indExigencia}">
+								            					<p:ajax update=":frmCE:messages" 
+								            						listener="#{mpECartorioRJBean.addMessageExigencia}" />
+								        					</p:selectBooleanCheckbox>
+															<p:selectBooleanCheckbox id="checkGratuito" 
+																itemLabel="Habilta Gratuito ?" 
+																value="#{mpECartorioRJBean.indGratuito}">
+								            					<p:ajax update=":frmCE:messages" 
+								            						listener="#{mpECartorioRJBean.addMessageGratuito}" />
+								        					</p:selectBooleanCheckbox>
+																
+															<p:commandButton value="Download" ajax="false"
+																immediate="true"
+																rendered="#{mpECartorioRJBean.indFile and mpECartorioRJBean.indAdmin}"
+																action="#{mpECartorioRJBean.FileDownloadView}"
+																icon="ui-icon-arrowthick-1-s">
+																<p:fileDownload value="#{mpECartorioRJBean.fileSC}" />
+															</p:commandButton>
+															<p:commandButton process="pedidoId @this" 
+																update=":frmCE:messages :frmCE:tabViewCE:pedidoId"
+															 	value="Gera Pedidos Selecionados..." icon="ui-icon-input"
+																action="#{mpECartorioRJBean.listaPathPedidoSel}" />
+														</p:panelGrid>
+
+													</div>
+
+													<div class="container">
+																								
+														<p:dataTable var="pedido" id="pedidoId"
+															value="#{mpECartorioRJBean.pedidoList}"
+															filteredValue="#{mpECartorioRJBean.pedidoListFiltered}"
+															widgetVar="pedidoTable"
+															emptyMessage=
+															"Nenhum Pedido #{mpECartorioRJBean.indExigencia ? 'Em Exigência' : ''} ... retornado !"
+															paginator="true" paginatorAlwaysVisible="false"
+															paginatorPosition="bottom" rows="30"
+															
+															selection="#{mpECartorioRJBean.arquivoPedidoSelecionadoList}"
+															rowKey="#{pedido}">
+															
+													        <f:facet name="header">
+													            Arquivos eCartórioRJ #{mpECartorioRJBean.indExigencia ? '( Em Exigência )' : ''}
+													        </f:facet>
+															<p:column selectionMode="multiple" 
+																					style="width:16px;text-align:center"/>
+
+															<p:column headerText="CERP" 
+																sortBy="#{pedido.idCerp.value}"
+																filterBy="#{pedido.idCerp.value}"
+																filterMatchMode="contains">
+																<h:outputText value="#{pedido.idCerp.value}" />
+															</p:column>
+															<p:column headerText="Número Ato"
+																sortBy="#{pedido.nuPedido}"
+																filterBy="#{pedido.nuPedido}"
+																filterMatchMode="contains">
+																<h:outputText value="#{pedido.nuPedido}" />
+															</p:column>
+															<p:column headerText="Número Pedido" 
+																sortBy="#{pedido.nuRequisicao.value}">
+																<h:outputText value="#{pedido.nuRequisicao.value}" />
+															</p:column>
+															<p:column headerText="Nome Busca"
+																sortBy="#{pedido.nmBusca.value}"
+																filterBy="#{pedido.nmBusca.value}"
+																filterMatchMode="contains">
+																<h:outputText value="#{pedido.nmBusca.value}" />
+															</p:column>
+															<p:column headerText="Status" 
+																filterBy="#{pedido.dsPdStatusPedidoExt.value}"
+																filterMatchMode="contains"
+																rendered="#{mpECartorioRJBean.indExigencia}">
+																<h:outputText value="#{pedido.dsPdStatusPedidoExt.value}" />
+															</p:column>
+
+															<p:column headerText="Ação" style="text-align:center">
+																<p:commandButton title="Exibir Arquivo" icon="ui-icon-mode-edit"
+																	style="width:40px;"
+																	action="#{mpECartorioRJBean.mpEditaPedido}"
+																	update="frmCE:idX1P" oncomplete="PF('dlgEdtP').show()"
+																	actionListener="#{mpECartorioRJBean.mpListenerPedidoEdita}">
+																	<f:attribute name="numeroCERPSelecionado"
+																		value="#{pedido.idCerp.value}" />
+																	<f:attribute name="numeroPedidoSelecionado"
+																		value="#{pedido.nuPedido}" />
+																</p:commandButton>
+																
+																<p:commandButton title="Gera PDFx" icon="ui-icon-mode-edit"
+																	style="width:40px;"
+																	action="#{mpECartorioRJBean.mpGeraPedidoX(pedido.nuPedido, pedido.idCerp.value)}" />
+															</p:column>
+
+														</p:dataTable>
+													</div>
+
+												</div>
+											</div>
+										</p:panel>
+									</div>
+
+								</p:tab>
+
+								<p:tab id="tbBalcao" title="Arquivos - Balcão">
+									<div class="ContainerIndent">
+										<span class="DispInlBlock Fright FloatNoneOnMobile"> 
+											<p:commandButton value="Lista Arquivos Balcão..." 
+												icon="ui-icon-search" process="@this" 
+ 												update=":frmCE:messages :frmCE:tabViewCE:arquivoBalcaoId"								
+												action="#{mpECartorioRJBean.listaPathBalcao}" />
+											<p:spacer width="100" height="10" />
+											<p:commandButton process="arquivoBalcaoId @this" 
+												update=":frmCE:messages :frmCE:tabViewCE:arquivoBalcaoId"
+											 	value="Gera Arquivos Balcão Selecionados..." icon="ui-icon-input"
+												action="#{mpECartorioRJBean.listaPathBalcaoSel}" />
+											<p:spacer width="50" height="10" />
+										</span>
+									</div>
+
+									<div class="container">
+										<p:dataTable var="arquivoBalcao"  id="arquivoBalcaoId"
+											value="#{mpECartorioRJBean.arquivoBalcaoList}"
+											widgetVar="arquivoBalcaoTable"
+											emptyMessage="Nenhum Arquivo Balcão... retornado !"
+											paginator="true" paginatorAlwaysVisible="false"
+											paginatorPosition="bottom" rows="30"
+											selection="#{mpECartorioRJBean.arquivoBalcaoSelecionadoList}"
+											rowKey="#{arquivoBalcao}">
+
+									        <f:facet name="header">
+									            Arquivos Balcão
+									        </f:facet>
+									        <p:column selectionMode="multiple" style="width:16px;text-align:center"/>										
+
+											<p:column headerText="Nome Arquivo"
+												filterBy="#{arquivoBalcao}" filterMatchMode="contains">
+												<h:outputText value="#{arquivoBalcao}" />
+											</p:column>
+
+											<p:column headerText="Ação" style="text-align:center">
+												<p:commandButton title="Gera PDF" icon="ui-icon-check"
+													action="#{mpECartorioRJBean.mpGeraBalcao}" process="@this"
+													 update=":frmCE:messages"
+													actionListener="#{mpECartorioRJBean.mpListenerBalcao}">
+													<f:attribute name="arquivoBalcaoSelecionado"
+														value="#{arquivoBalcao}" />
+												</p:commandButton>
+												<p:commandButton title="Edita Arquivo" icon="ui-icon-mode-edit"
+													action="#{mpECartorioRJBean.mpEditaBalcao}"
+													update="frmCE:idX1" oncomplete="PF('dlgEdt').show()"
+													actionListener="#{mpECartorioRJBean.mpListenerBalcaoEdita}">
+													<f:attribute name="arquivoBalcaoSelecionadoEdita"
+														value="#{arquivoBalcao}" />
+												</p:commandButton>
+											</p:column>
+
+										</p:dataTable>
+
+									</div>
+
+								</p:tab>
+
+								<p:tab title="Arquivos - Geração Etiquetas">
+									<div class="ContainerIndent">
+										<span class="DispInlBlock Fright FloatNoneOnMobile"> 
+											<p:commandButton value="Lista Arquivos Etiquetas..." 
+												icon="ui-icon-search" process="@this" 
+ 												update=":frmCE:messages :frmCE:tabViewCE:arquivoEtiquetaId"								
+												action="#{mpECartorioRJBean.listaPathEtiqueta}" />
+											<p:spacer width="100" height="10" />
+											<p:commandButton process="arquivoEtiquetaId @this" 
+												update=":frmCE:messages :frmCE:tabViewCE:arquivoEtiquetaId"
+											 	value="Gera Arquivos Etiquetas Selecionadas..." icon="ui-icon-input" 
+												action="#{mpECartorioRJBean.listaPathEtiquetaSel}" />
+										</span>
+									</div>
+
+									<div class="container">
+										<p:dataTable var="arquivoEtiqueta" id="arquivoEtiquetaId"
+											value="#{mpECartorioRJBean.arquivoEtiquetaList}"
+											widgetVar="arquivoEtiquetaTable"
+											emptyMessage="Nenhum Arquivo Etiqueta... retornado !"
+											paginator="true" paginatorAlwaysVisible="false"
+											paginatorPosition="bottom" rows="30" 
+											selection="#{mpECartorioRJBean.arquivoEtiquetaSelecionadoList}"
+											rowKey="#{arquivoEtiqueta}">
+											
+									        <f:facet name="header">
+									            Etiquetas
+									        </f:facet>
+									        <p:column selectionMode="multiple" style="width:16px;text-align:center"/>										
+
+											<p:column headerText="Nome Arquivo"
+												filterBy="#{arquivoEtiqueta}" filterMatchMode="contains">
+												<h:outputText value="#{arquivoEtiqueta}" />
+											</p:column>
+
+											<p:column headerText="Ação" style="text-align:center">
+												<p:commandButton title="Gera PDF" icon="ui-icon-check"
+													action="#{mpECartorioRJBean.mpGeraEtiqueta}" process="@this"
+													update=":frmCE:messages"
+													actionListener="#{mpECartorioRJBean.mpListenerEtiqueta}">
+													<f:attribute name="arquivoEtiquetaSelecionado"
+														value="#{arquivoEtiqueta}" />
+												</p:commandButton>
+											</p:column>
+
+										</p:dataTable>
+									</div>
+
+								</p:tab>
+
+								<p:tab title="Repasse - eCartorioRJ"
+									rendered="#{mpECartorioRJBean.indAdmin}">
+
+									<div class="ContainerIndent ui-fluid">
+										<p:panel>
+											<div class="Container">
+												<div class="Container95 Responsive100">
+													<div class="Container100">
+														<p:panelGrid columns="9" layout="grid"
+															style="border:0px !important; background:none;"
+															styleClass="ui-panelgrid-blank">
+
+															<p:outputLabel value="Data Inicial: " />
+															<p:calendar id="dataInicialR" required="true" locale="pt"
+																timeZone="America/Sao_Paulo"
+																validatorMessage="Informar Data Inicial"
+																placeholder="Data Inicial" pattern="dd/MM/yyyy"
+																showOn="button" value="#{mpECartorioRJBean.dataInicioR}" />
+															<p:outputLabel value="Data Final: " />
+															<p:calendar id="dataFinalR" required="true" locale="pt"
+																timeZone="America/Sao_Paulo"
+																validatorMessage="Informar Data Final"
+																placeholder="Data Final" pattern="dd/MM/yyyy"
+																showOn="button" value="#{mpECartorioRJBean.dataFimR}" />
+															<p:outputLabel />
+															<p:commandButton value="Executar Web Service" icon="ui-icon-search"
+ 																process="@this" update=":frmCE:messages"								
+																action="#{mpECartorioRJBean.executaWSRepasse}" />
+															<p:commandButton value="Download" ajax="false" immediate="true"
+																rendered="#{mpECartorioRJBean.indFileRepasse and mpECartorioRJBean.indAdmin}"
+																action="#{mpECartorioRJBean.FileDownloadViewRepasse}"
+																icon="ui-icon-arrowthick-1-s">
+																<p:fileDownload value="#{mpECartorioRJBean.fileSCRepasse}" />
+															</p:commandButton>
+														</p:panelGrid>
+
+													</div>
+
+													<div class="container">
+														<p:dataTable var="repasse"
+															value="#{mpECartorioRJBean.repasseList}"
+															widgetVar="repasseTable"
+															emptyMessage="Nenhum Repasse... retornado !"
+															paginator="true" paginatorAlwaysVisible="false"
+															paginatorPosition="bottom" rows="30">
+
+															<p:column headerText="CERP"
+																filterBy="#{repasse.idCerp.value}"
+																filterMatchMode="contains">
+																<h:outputText value="#{repasse.idCerp.value}" />
+															</p:column>
+															<p:column headerText="Modelo"
+																filterBy="#{repasse.modelo.value}"
+																filterMatchMode="contains">
+																<h:outputText value="#{repasse.modelo.value}" />
+															</p:column>
+
+														</p:dataTable>
+													</div>
+
+												</div>
+											</div>
+										</p:panel>
+									</div>
+
+								</p:tab>
+
+								<p:tab title="Pedido XML - eCartorioRJ"
+									rendered="#{mpECartorioRJBean.indAdmin}">
+									<p:panelGrid columns="1" layout="grid"
+										style="border:0px !important; background:none;"
+										styleClass="ui-panelgrid-blank">
+
+										<p:inputTextarea id="respostaWS" readonly="true" rows="3"
+											value="#{mpECartorioRJBean.respostaWS}" />
+
+									</p:panelGrid>
+								</p:tab>
+
+								<p:tab title="Repasse XML - eCartorioRJ"
+									rendered="#{mpECartorioRJBean.indAdmin}">
+									<p:panelGrid columns="1" layout="grid"
+										style="border:0px !important; background:none;"
+										styleClass="ui-panelgrid-blank">
+
+										<p:inputTextarea id="respostaWSR" readonly="true" rows="3"
+											value="#{mpECartorioRJBean.respostaWSR}" />
+
+									</p:panelGrid>
+								</p:tab>
+
+							</p:tabView>
+
+						</p:panel>
+						
+						<p:dialog id="idX1" widgetVar="dlgEdt" showEffect="fade" hideEffect="fade"
+							height="400" width="800" style="margin-bottom:10px"
+							header="Exibe Arquivo Balcão...( #{mpECartorioRJBean.arquivoSelecionadoEdita} )">
+							
+							<p:panelGrid columns="1" layout="grid" style="border:0px !important; background:none;"
+									styleClass="ui-panelgrid-blank">
+							
+								<!-- <p:textEditor id="idX4" widgetVar="editorWidget" 
+									value="#{mpECartorioRJBean.textoEditor}"
+									height="350" width="700" style="margin-bottom:10px">
+								       <f:facet name="toolbar">
+								           <span class="ql-formats">
+								               <select class="ql-size"></select>
+								           </span>
+								       </f:facet>
+							 	</p:textEditor> -->
+							 	
+							 	<p:inputTextarea id="idX2" rows="10" cols="90"
+							 		style="font-family:monospace;"
+							 		value="#{mpECartorioRJBean.textoEditor}" />
+							 		
+								<!-- <h:outputLabel value="xxxxxxxxxxxx" />
+								<p:outputLabel value="#{mpECartorioRJBean.textoEditor}" />
+								<h:outputLabel value="xxxxxxxxxxxx1" />
+								<p:outputLabel value="#{mpECartorioRJBean.textoEditor}" />   -->
+														 											
+							</p:panelGrid>
+  						</p:dialog>				
+
+						<p:dialog id="idX1P" widgetVar="dlgEdtP" showEffect="fade" hideEffect="fade"
+							height="400" width="800" style="margin-bottom:10px"
+							header="Exibe Arquivo Pedido...( #{mpECartorioRJBean.arquivoSelecionadoEditaP} )">
+							
+							<p:panelGrid columns="1" layout="grid" style="border:0px !important; background:none;"
+									styleClass="ui-panelgrid-blank">
+							
+								<!-- <p:textEditor id="idX4P" widgetVar="editorWidget" 
+									value="#{mpECartorioRJBean.textoEditor}"
+									height="350" width="700" style="margin-bottom:10px">
+								       <f:facet name="toolbar">
+								           <span class="ql-formats">
+								               <select class="ql-size"></select>
+								           </span>
+								       </f:facet>
+							 	</p:textEditor> -->
+							 	
+							 	<p:inputTextarea id="idX2P" rows="10" cols="90"
+							 		style="font-family:monospace;"
+							 		value="#{mpECartorioRJBean.textoEditorP}" />
+							 		
+								<!-- <h:outputLabel value="xxxxxxxxxxxx" />
+								<p:outputLabel value="#{mpECartorioRJBean.textoEditor}" />
+								<h:outputLabel value="xxxxxxxxxxxx1" />
+								<p:outputLabel value="#{mpECartorioRJBean.textoEditor}" />   -->
+														 		
+							</p:panelGrid>
+  						</p:dialog>				
+											    						
+					</h:form>
+
+				</div>
+			</div>
+		</div>
+
+	</ui:define>
+
+</ui:composition>

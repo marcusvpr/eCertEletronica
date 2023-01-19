@@ -1,0 +1,189 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+    template="/WEB-INF/template/barcelona/template.xhtml">
+               
+    <ui:define name="content">
+    
+        <f:metadata>
+			<f:viewAction action="#{mpSistemaConfigController.inicializar}" />
+		</f:metadata>
+    
+					<h:form id="frmSC">
+						<p:panel id="panSC" header="Cadastro de #{mpSistemaConfigController.txtTitulo}" closable="true">
+							<p:ajax event="close" listener="#{mpSistemaConfigController.mpFechar}" />
+							
+				<div class="container">
+							<p:tabView id="tabvSC">
+			
+								<p:tab title="Cadastro">
+									<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+			
+									<p:messages id="messages" autoUpdate="false" showDetail="false" />
+									<!-- p:growl id="growl" showDetail="true" sticky="true" />  -->
+									
+									<p:panel id="panCadSC" header=". Modo: #{mpSistemaConfigController.txtModoTela}"
+										footer=". Modo: #{mpSistemaConfigController.txtModoTela}">
+										<f:facet name="actions">
+											<ui:include src="mpBotoesSistemaConfig.xhtml" />
+										</f:facet>
+			
+										<p:tabView id="tabvCadSC">
+			
+											<p:tab id="tabCadDadosSC" title="Dados">
+																		 									
+    											<p:panelGrid columns="3" 
+    												columnClasses="ui-grid-col-4,ui-grid-col-4,ui-grid-col-4" 
+    												layout="grid" styleClass="ui-panelgrid-blank">
+    												
+							                        <h:panelGroup>
+							                            <p:outputLabel value="Parâmetro: " />
+														<p:inputText id="parametro" maxlength="100"
+															required="#{!mpSistemaConfigController.indEditavel}"
+															validatorMessage="Informar PARÂMETRO" style="width:70%"
+															readonly="#{mpSistemaConfigController.indEditavel}"
+															value="#{mpSistemaConfigController.mpSistemaConfig.parametro}">
+															<f:validateLength maximum="100" />
+															<p:clientValidator event="keyup" />
+														</p:inputText>
+							                        </h:panelGroup>
+							                        <h:panelGroup>
+							                            <p:outputLabel value="Descrição: " />
+														<p:inputText id="descricao" maxlength="150"
+															required="#{!mpSistemaConfigController.indEditavel}"
+															validatorMessage="Informar DESCRIÇÂO" style="width:70%"
+															readonly="#{mpSistemaConfigController.indEditavel}"
+															value="#{mpSistemaConfigController.mpSistemaConfig.descricao}">
+															<f:validateLength maximum="150" />
+															<p:clientValidator event="keyup" />
+														</p:inputText>
+							                        </h:panelGroup>
+							                        <h:panelGroup>
+							                            <p:outputLabel value="Tipo Campo: " />
+														<p:selectOneMenu id="mpTipoCampo" effect="fold"
+															converter="omnifaces.SelectItemsConverter"
+															required="#{mpSistemaConfigController.indEditavel}"
+															validatorMessage="Informar Tipo Campo"
+															disabled="#{mpSistemaConfigController.indEditavel}"
+															value="#{mpSistemaConfigController.mpSistemaConfig.mpTipoCampo}">
+															<f:selectItem itemLabel="Selecione..." itemValue="" />
+															<f:selectItems
+																value="#{mpSistemaConfigController.mpTipoCampoList}"
+																var="mpTipoCampo" itemLabel="#{mpTipoCampo.descricao}"
+																itemValue="#{mpTipoCampo}" />
+														</p:selectOneMenu>
+							                        </h:panelGroup>
+							                        <h:panelGroup>
+							                            <p:outputLabel value="Texto " />
+														<p:inputTextarea rows="10" id="Texto" style="width:70%"
+															maxlength="500" readonly="#{mpSistemaConfigController.indEditavel}"
+															value="#{mpSistemaConfigController.mpSistemaConfig.valorT}">
+															<f:validateLength maximum="500" />
+															<p:clientValidator event="keyup" />
+														</p:inputTextarea>
+							                        </h:panelGroup>
+							                        <h:panelGroup>
+							                            <p:outputLabel value="Número: " />
+														<p:inputText id="numero" maxlength="10"
+															styleClass="moeda"
+															required="#{mpCryptoController.indEditavel}"
+															validatorMessage="Informar Número"
+															readonly="#{mpSistemaConfigController.indEditavel}"
+															value="#{mpSistemaConfigController.mpSistemaConfig.valorD}">
+															<f:convertNumber maxFractionDigits="2"
+																minFractionDigits="2" />
+														</p:inputText>
+							                        </h:panelGroup>
+							                        <h:panelGroup>
+							                            <p:outputLabel value="Indicador:: " />
+														<p:selectBooleanCheckbox 
+															disabled="#{mpSistemaConfigController.indEditavel}"
+															value="#{mpSistemaConfigController.mpSistemaConfig.indValor}" />
+							                        </h:panelGroup>
+							                    </p:panelGrid>
+							                    							                    
+											</p:tab>
+
+										</p:tabView>
+									</p:panel>						                  
+							
+								</p:tab>
+								
+								<p:tab id="tabPesqSC" title="Pesquisa">
+									<div class="container">
+									
+										<p:commandButton value="Exportar para XLS" ajax="false"
+																		icon="fa fa-file-excel-o Fs14 red">
+											<p:dataExporter type="xls" target="dttPesqSC" fileName="mpSistemaConfigs"
+												postProcessor="#{mpSistemaConfigController.posProcessarXls}" />
+										</p:commandButton>									
+									
+										<p:dataTable id="dttPesqSC" widgetVar="wvdttPesqSC" var="mpSistemaConfig"
+											value="#{mpSistemaConfigController.mpSistemaConfigList}"
+											emptyMessage="Nenhum Sistema Configuração encontrado!"
+											filteredValue="#{mpSistemaConfigController.filtroMpSistemaConfigList}"
+											paginator="true" paginatorAlwaysVisible="false"
+											paginatorPosition="bottom" rows="30">
+			
+											<p:column headerText="Parâmetro" sortBy="#{mpSistemaConfig.parametro}"
+												filterBy="#{mpSistemaConfig.parametro}"
+												filterMatchMode="contains">
+												<h:outputText value="#{mpSistemaConfig.parametro}" />
+											</p:column>
+											<p:column headerText="Descrição" sortBy="#{mpSistemaConfig.descricao}"
+												filterBy="#{mpSistemaConfig.descricao}"
+												filterMatchMode="contains">
+												<h:outputText value="#{mpSistemaConfig.descricao}" />
+											</p:column>
+											<p:column headerText="Tipo Campo" sortBy="#{mpSistemaConfig.mpTipoCampo.descricao}"
+												filterBy="#{mpSistemaConfig.mpTipoCampo.descricao}"
+												filterMatchMode="contains" style="text-align:center">
+												<h:outputText value="#{mpSistemaConfig.mpTipoCampo.descricao}" />
+											</p:column>
+											<p:column headerText="Texto" sortBy="#{mpSistemaConfig.valorT}"
+												filterBy="#{mpSistemaConfig.valorT}"
+												filterMatchMode="contains">
+												<h:outputText value="#{mpSistemaConfig.valorT}" />
+											</p:column>
+											<p:column headerText="Número" sortBy="#{mpSistemaConfig.valorD}" style="text-align:center">
+												<h:outputText value="#{mpSistemaConfig.valorD}">
+													<f:convertNumber type="currency" pattern="###,##0.00" />
+												</h:outputText>
+											</p:column>
+											<p:column headerText="Indicador" sortBy="#{mpSistemaConfig.indValor}" 
+												style="text-align:center">
+												<h:outputText value="#{mpSistemaConfig.indValor}" />
+											</p:column>
+			
+											<p:column headerText="Ação" style="text-align:center">
+												<p:commandButton title="Edita registro" icon="ui-icon-check"
+													action="#{mpSistemaConfigController.mpView}"
+													process="@this" update="@form"
+													actionListener="#{mpSistemaConfigController.mpListener}">
+													<f:attribute name="SistemaConfigSelecionado"
+														value="#{mpSistemaConfig}" />
+												</p:commandButton>
+												<p:commandButton title="Exclui registro" icon="ui-icon-trash"
+													oncomplete="PF('wvcdlogExclusaoSC').show()" process="@this"
+													update=":frmSC:tabvSC:cdlogExclusaoSC"
+													actionListener="#{mpSistemaConfigController.mpListener}">
+													<f:attribute name="SistemaConfigSelecionado"
+														value="#{mpSistemaConfig}" />
+												</p:commandButton>
+											</p:column>
+										</p:dataTable>
+									</div>
+								</p:tab>
+			
+							</p:tabView>
+						 </div>												
+						</p:panel>						
+												
+					</h:form>
+      
+    </ui:define>
+
+</ui:composition>

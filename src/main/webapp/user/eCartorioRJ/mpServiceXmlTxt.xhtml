@@ -1,0 +1,165 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/template/barcelona/template.xhtml">
+
+	<ui:define name="title">Conversão XML x TXT</ui:define>
+
+	<ui:define name="head">
+		<style type="text/css">
+.ui-selectoneradio.ui-grid-responsive .ui-grid-col-4,
+	.ui-selectmanycheckbox.ui-grid-responsive .ui-grid-col-4 {
+	padding-bottom: 10px;
+}
+</style>
+	</ui:define>
+
+	<ui:define name="content">
+
+		<h:outputScript name="static/js/print.min.js" target="head" />
+
+		<f:metadata>
+			<f:viewAction action="#{mpConverteXmlTxtBean.inicializar}" />
+		</f:metadata>
+
+		<div class="ui-g">
+			<div class="ui-g-12">
+				<div class="card card-w-title">
+
+					<h:form id="frmCXT">
+						<p:panel id="panCXT"
+							header="Conversçao XML x TXT" closable="true">
+							<p:ajax event="close" listener="#{mpConverteXmlTxtBean.sairWS}" />
+
+							<p:growl id="messages" showDetail="false" />
+							
+							<p:tabView id="tabViewCXT">
+
+								<p:tab id="tbXmlTxt" title="Converte - XML para TXT">
+									<div class="ContainerIndent">
+										<span class="DispInlBlock Fright FloatNoneOnMobile"> 
+											<p:commandButton value="Lista Arquivos XMLs ..." 
+												icon="ui-icon-search" process="@this" 
+ 												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoXmlId"								
+												action="#{mpConverteXmlTxtBean.listaPathArquivoXml}" />
+											<p:spacer width="100" height="10" />
+											<p:commandButton process="arquivoXmlId @this" 
+												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoXmlId"
+											 	value="Gera Arquivos Xmls Selecionados..." icon="ui-icon-input"
+												action="#{mpConverteXmlTxtBean.listaPathArquivoXmlSel}" />
+											<p:spacer width="100" height="10" />
+											<p:commandButton process="arquivoXmlId @this" 
+												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoXmlId"
+											 	value="Gera Relaório Arquivos Xmls Selecionados..." icon="ui-icon-input"
+												action="#{mpConverteXmlTxtBean.listaPathArquivoXmlSelPdf}" />
+											<p:spacer width="50" height="10" />
+										</span>
+									</div>
+
+									<div class="container">
+										<p:dataTable var="arquivoXml"  id="arquivoXmlId"
+											value="#{mpConverteXmlTxtBean.arquivoXmlList}"
+											widgetVar="arquivoXmlTable"
+											emptyMessage="Nenhum Arquivo XML... retornado !"
+											paginator="true" paginatorAlwaysVisible="false"
+											paginatorPosition="bottom" rows="30"
+											selection="#{mpConverteXmlTxtBean.arquivoXmlSelecionadoList}"
+											rowKey="#{arquivoXml}">
+
+									        <f:facet name="header">
+									            Arquivos XMLs
+									        </f:facet>
+									        <p:column selectionMode="multiple" style="width:16px;text-align:center"/>										
+
+											<p:column headerText="Nome Arquivo"
+												filterBy="#{arquivoXml}" filterMatchMode="contains">
+												<h:outputText value="#{arquivoXml}" />
+											</p:column>
+
+											<p:column headerText="Ação" style="text-align:center">
+												<p:commandButton title="Gera TXT" icon="ui-icon-check"
+													action="#{mpConverteXmlTxtBean.mpGeraTxt}" process="@this"
+													update=":frmCXT:messages"
+													actionListener="#{mpConverteXmlTxtBean.mpListenerArquivoXml}">
+													<f:attribute name="arquivoXmlSelecionado" value="#{arquivoXml}" />
+												</p:commandButton>
+												<p:commandButton title="Gera Relatório" icon="ui-icon-print"
+													action="#{mpConverteXmlTxtBean.mpGeraPdf}" process="@this"
+													update=":frmCXT:messages"
+													actionListener="#{mpConverteXmlTxtBean.mpListenerArquivoXml}">
+													<f:attribute name="arquivoXmlSelecionado" value="#{arquivoXml}" />
+												</p:commandButton>
+											</p:column>
+
+										</p:dataTable>
+
+									</div>
+
+								</p:tab>
+
+								<p:tab id="tbTxtXml" title="Converte - TXT para XML">
+									<div class="ContainerIndent">
+										<span class="DispInlBlock Fright FloatNoneOnMobile"> 
+											<p:commandButton value="Lista Arquivos TXTs ..." 
+												icon="ui-icon-search" process="@this" 
+ 												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoTxtId"								
+												action="#{mpConverteXmlTxtBean.listaPathArquivoTxt}" />
+											<p:spacer width="100" height="10" />
+											<p:commandButton process="arquivoTxtId @this" 
+												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoTxtId"
+											 	value="Gera Arquivos Txts Selecionados..." icon="ui-icon-input"
+												action="#{mpConverteXmlTxtBean.listaPathArquivoTxtSel}" />
+											<p:spacer width="50" height="10" />
+										</span>
+									</div>
+
+									<div class="container">
+										<p:dataTable var="arquivoTxt"  id="arquivoTxtId"
+											value="#{mpConverteXmlTxtBean.arquivoTxtList}"
+											widgetVar="arquivoTxtTable"
+											emptyMessage="Nenhum Arquivo TXT... retornado !"
+											paginator="true" paginatorAlwaysVisible="false"
+											paginatorPosition="bottom" rows="30"
+											selection="#{mpConverteXmlTxtBean.arquivoTxtSelecionadoList}"
+											rowKey="#{arquivoTxt}">
+
+									        <f:facet name="header">
+									            Arquivos TXTs
+									        </f:facet>
+									        <p:column selectionMode="multiple" style="width:16px;text-align:center"/>										
+
+											<p:column headerText="Nome Arquivo"
+												filterBy="#{arquivoTxt}" filterMatchMode="contains">
+												<h:outputText value="#{arquivoTxt}" />
+											</p:column>
+
+											<p:column headerText="Ação" style="text-align:center">
+												<p:commandButton title="Gera XML" icon="ui-icon-check"
+													action="#{mpConverteXmlTxtBean.mpGeraXml}" process="@this"
+													 update=":frmCXT:messages"
+													actionListener="#{mpConverteXmlTxtBean.mpListenerArquivoTxt}">
+													<f:attribute name="arquivoTxtSelecionado" value="#{arquivoTxt}" />
+												</p:commandButton>
+											</p:column>
+
+										</p:dataTable>
+
+									</div>
+
+								</p:tab>
+
+							</p:tabView>
+
+						</p:panel>
+																    						
+					</h:form>
+
+				</div>
+			</div>
+		</div>
+
+	</ui:define>
+
+</ui:composition>

@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<arrayOfPedido xmlns="http://schemas.datacontract.org/2004/07/eCartorio.Service.Contracts">
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>Ana Paula Rodrigues Gomes Andrade</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-08T10:56:07.823</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-13T10:56:05.01</dt_sla>
+        <dt_status>2021-02-10T13:36:52</dt_status>
+        <id_cerp>eecf02e9-4202-429c-bc67-13b44c800442</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>722110</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>VIVERDE 3 SPE INCORPORAÇÃO IMOBILIÁRIA LTDA.</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>03124178700</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>17910059000110</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021282234847</nu_pedido>
+        <nu_requisicao>202128722110</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>F MAC SPE FLORENÇA EMPREENDIMENTOS IMOBILIARIOS LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T09:17:19.417</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T09:16:19.833</dt_sla>
+        <dt_status>2021-02-10T13:36:55.313</dt_status>
+        <id_cerp>becfbe74-7607-4c4f-af18-6e885f3e3950</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>723892</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>F MAC SPE FLORENÇA EMPREENDIMENTOS IMOBILIARIOS LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>10341332000193</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>10341332000193</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292240930</nu_pedido>
+        <nu_requisicao>202129723892</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 5 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>MARIA ROHEM</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-04T15:45:17.96</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-09T15:45:05.177</dt_sla>
+        <dt_status>2021-02-10T13:36:50.72</dt_status>
+        <id_cerp>6d433e39-de7e-4052-8396-1eb9118da16b</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1402</id_pd_tipo_ato>
+        <id_requisicao>719278</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>PRAÇA DO CARMO DOCES E BISCOITOS EIRELI</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>60836199715</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>25087930000155</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021242224780</nu_pedido>
+        <nu_requisicao>202124719278</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>VERONICA SANTOS LIMA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1962-04-07T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T18:37:36.243</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T18:36:47.3</dt_sla>
+        <dt_status>2021-02-10T13:37:00.983</dt_status>
+        <id_cerp>6d43a7fa-8cb5-4d4e-92a5-8cb32e3a3cc4</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>725476</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>ALUISIO DE ABREU COUTINHO JUNIOR</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>01845135539</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>06858684867</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292246289</nu_pedido>
+        <nu_requisicao>202129725476</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>Lorrana Santos da Silva Barbosa Fernandes</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1988-09-08T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-08T20:15:07.233</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-13T20:10:59.127</dt_sla>
+        <dt_status>2021-02-10T13:36:54.33</dt_status>
+        <id_cerp>34575fe9-935e-4d4b-8201-ca4d4c9a01e7</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>723693</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>Lorrana Santos da Silva Barbosa Fernandes</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>12468178700</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>12468178700</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021282239994</nu_pedido>
+        <nu_requisicao>202128723693</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>VERONICA SANTOS LIMA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1966-06-10T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T18:39:23.843</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T18:39:07.187</dt_sla>
+        <dt_status>2021-02-10T13:37:00.983</dt_status>
+        <id_cerp>cf8a3cdf-08d0-4fdd-bd54-a9cc74dfedfc</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>725479</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>CINTIA ITOKAZU COUTINHO</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>01845135539</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>11896373836</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292246295</nu_pedido>
+        <nu_requisicao>202129725479</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>PAULO PEDRO</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-08T15:22:07.303</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-13T15:21:13.453</dt_sla>
+        <dt_status>2021-02-10T13:36:53.08</dt_status>
+        <id_cerp>7f29326d-a8c8-455c-9126-8ed0ea91b4e8</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>723034</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>CLIMBING SERVICE SOLUÇÕES EM ALPINISMO LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>02383780715</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>25362726000103</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021282237833</nu_pedido>
+        <nu_requisicao>202128723034</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>CRISTIANE MAIA RAMOS</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T16:41:48.443</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T16:41:40.88</dt_sla>
+        <dt_status>2021-02-10T13:37:00.267</dt_status>
+        <id_cerp>8882140c-76fe-47e4-97e1-30253f31fedf</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>725228</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>MARCELO TSUNEHYRO NAKANE</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>03623354783</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>83310495787</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292245378</nu_pedido>
+        <nu_requisicao>202129725228</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>Ana Paula Rodrigues Gomes Andrade</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-08T10:52:14.48</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-13T10:52:11.31</dt_sla>
+        <dt_status>2021-02-10T13:36:52</dt_status>
+        <id_cerp>c7082bc7-8515-480c-b855-1793522a59a1</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>722103</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>VIVERDE I SPE INCORPORAÇÃO IMOBILIÁRIA LTDA.</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>03124178700</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>13789932000107</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021282234829</nu_pedido>
+        <nu_requisicao>202128722103</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 5 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>CNS NACIONAL DE SERVIÇOS LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T11:34:21.24</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T11:34:04.083</dt_sla>
+        <dt_status>2021-02-10T13:36:57.297</dt_status>
+        <id_cerp>d1bd19c9-3dbf-4134-a9b7-b2489e9c4749</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1402</id_pd_tipo_ato>
+        <id_requisicao>724276</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>CNS NACIONAL DE SERVIÇOS LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>33285255000105</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>33285255000105</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292242375</nu_pedido>
+        <nu_requisicao>202129724276</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>SPE ITUVERAVA EMPREENDIMENTOS IMOBILIARIOS LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T09:00:41.763</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T08:59:17.62</dt_sla>
+        <dt_status>2021-02-10T13:36:55.233</dt_status>
+        <id_cerp>bc98d5a3-02c5-428d-8adf-43c0495ee365</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>723873</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>SPE ITUVERAVA EMPREENDIMENTOS IMOBILIARIOS LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>15492542000104</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>15492542000104</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292240860</nu_pedido>
+        <nu_requisicao>202129723873</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 5 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>RICARDO DE BARROS E VASCONCELLOS</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-05T14:12:50.417</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-10T14:12:33.663</dt_sla>
+        <dt_status>2021-02-10T13:36:51.39</dt_status>
+        <id_cerp>39d91586-1327-43fb-9e79-92022a677e8b</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1402</id_pd_tipo_ato>
+        <id_requisicao>720682</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>COMERCIAL CHEN ARTIGOS PARA PRESENTES E VARIEDADES LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>59853204720</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>02598616000131</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021252229914</nu_pedido>
+        <nu_requisicao>202125720682</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>João Pedro Lugão Ferreira</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T12:39:16.197</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T12:39:11.633</dt_sla>
+        <dt_status>2021-02-10T13:36:57.877</dt_status>
+        <id_cerp>dea4ff8d-c278-462a-98ef-1f489073ccbc</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>724446</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>ANCAR PARKING ESTACIONAMENTOS LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>19218917773</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>10142779000303</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292242902</nu_pedido>
+        <nu_requisicao>202129724446</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>F Mac Engenharia LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T08:42:34.27</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T08:40:46.953</dt_sla>
+        <dt_status>2021-02-10T13:36:55.11</dt_status>
+        <id_cerp>7d0ffeee-d287-4882-8668-a7e5a3bf58aa</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>723858</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>F MAC ENGENHARIA LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>04292627000114</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>04292627000114</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292240768</nu_pedido>
+        <nu_requisicao>202129723858</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>ARAGUAIA RIO EMPREENDIMENTOS IMOBILIARIOS LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T08:57:16.503</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T08:56:10.283</dt_sla>
+        <dt_status>2021-02-10T13:36:55.203</dt_status>
+        <id_cerp>f9fce0cd-d26f-4be1-823b-684e57f0c923</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>723868</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>ARAGUAIA RIO EMPREENDIMENTOS IMOBILIARIOS LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>15389282000138</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>15389282000138</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292240832</nu_pedido>
+        <nu_requisicao>202129723868</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>Felipe Souto de Castro Longo</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-05T10:38:46.163</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-10T10:37:06.05</dt_sla>
+        <dt_status>2021-02-10T13:36:51.203</dt_status>
+        <id_cerp>d150af22-a180-4eae-a034-4e8dd7048aac</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>720168</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>ANDRE PROTASIO PEREIRA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>09887607703</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>44966687004</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021252228235</nu_pedido>
+        <nu_requisicao>202125720168</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>Ana Paula Rodrigues Gomes Andrade</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-08T10:54:53.32</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-13T10:54:50.397</dt_sla>
+        <dt_status>2021-02-10T13:36:52</dt_status>
+        <id_cerp>65f3eb37-5962-4d51-8613-3301f8257d45</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>722108</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>VIVERDE 2 SPE INCORPORAÇÃO IMOBILIÁRIA LTDA.</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>03124178700</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>15000531000151</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021282234845</nu_pedido>
+        <nu_requisicao>202128722108</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>Felipe Souto de Castro Longo</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-05T10:06:20.58</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-10T10:04:55.123</dt_sla>
+        <dt_status>2021-02-10T13:36:51.173</dt_status>
+        <id_cerp>a274c9d1-74f4-489f-9726-954b41c2c5ae</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>720092</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>Eliana Brazil Protasio</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>09887607703</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>36670065949</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021252227879</nu_pedido>
+        <nu_requisicao>202125720092</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>Jorge Ricardo Gomes Tavares</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>2009-10-07T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-08T16:08:25.307</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-13T16:08:08.87</dt_sla>
+        <dt_status>2021-02-10T13:36:53.39</dt_status>
+        <id_cerp>22a1285f-761f-499f-b52b-8f6a4a774946</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>723190</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>JORGE GOMES TAVARES DISTRIBUIDORA DE GAS</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>90332865720</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>11206750000130</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021282238298</nu_pedido>
+        <nu_requisicao>202128723190</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>GD2J2 HENRIQUE OSWALD EMPREENDIMENTOS IMOBILIARIOS SPE LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T15:08:39.813</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T15:08:24.53</dt_sla>
+        <dt_status>2021-02-10T13:36:59.187</dt_status>
+        <id_cerp>975e6140-841e-4282-9d2d-828280f2f1b1</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>724841</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>GD2J HENRIQUE OSWALD – EMPREENDIMENTOS IMOBILIÁRIOS SPE LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>33665427000168</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>33665427000168</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292244097</nu_pedido>
+        <nu_requisicao>202129724841</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 5 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>HANNA E ROSE SERVIÇO E COMÉRCIO LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T12:01:12.763</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T12:00:27.997</dt_sla>
+        <dt_status>2021-02-10T13:36:57.563</dt_status>
+        <id_cerp>590a2628-df1f-4afe-ad67-4a7aaff8ea13</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1402</id_pd_tipo_ato>
+        <id_requisicao>724350</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>HANNA E ROSE SERVIÇO E COMÉRCIO LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>01355919000160</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>01355919000160</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292242591</nu_pedido>
+        <nu_requisicao>202129724350</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>LUCAS LATINI COVA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-09T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T13:13:42.42</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T12:44:38.883</dt_sla>
+        <dt_status>2021-02-10T13:37:18.36</dt_status>
+        <id_cerp>4ff9a6f1-a82e-4af4-ab54-cc0affe10aaf</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>724528</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>Hotel Rey Blanco Ltda.</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>12487388706</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>30121826000170</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292243184</nu_pedido>
+        <nu_requisicao>202129724528</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>JBV LOCACAO DE IMOVEIS LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T17:51:25.223</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T17:49:58.127</dt_sla>
+        <dt_status>2021-02-10T13:37:00.75</dt_status>
+        <id_cerp>c54ccca4-1967-45a4-93ac-27bbbfc9dbc6</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>725413</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>CRISTOPHE CHARLES HENRI KIRSCH</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>01315479000118</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>07005366123</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292246030</nu_pedido>
+        <nu_requisicao>202129725413</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>JBV LOCACAO DE IMOVEIS LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T17:51:25.223</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T17:46:17.05</dt_sla>
+        <dt_status>2021-02-10T13:37:00.687</dt_status>
+        <id_cerp>bb3e81a1-fe0b-4795-94e7-2fc27e01661b</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>725413</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>JANAÍNA CARRANO DE ALMEIDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>01315479000118</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>09456487741</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292246010</nu_pedido>
+        <nu_requisicao>202129725413</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>JBV LOCACAO DE IMOVEIS LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T17:51:25.223</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T17:48:23.807</dt_sla>
+        <dt_status>2021-02-10T13:37:00.72</dt_status>
+        <id_cerp>e80c0465-b6d3-4049-9d8c-b3522a47a73a</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>725413</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>ANA LUIZA CORREA TELLES</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>01315479000118</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>01100542701</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292246020</nu_pedido>
+        <nu_requisicao>202129725413</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 5 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>flavia kitober</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1977-12-24T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T10:59:40.813</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T10:59:02.157</dt_sla>
+        <dt_status>2021-02-10T13:36:56.907</dt_status>
+        <id_cerp>eaf21681-371b-4a12-a382-443e39eb4536</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1402</id_pd_tipo_ato>
+        <id_requisicao>724184</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>flavia kitober</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>07615430747</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>07615430747</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292241990</nu_pedido>
+        <nu_requisicao>202129724184</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>Lis Aguileira Coelho</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-09T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T23:40:16.71</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T23:40:09.773</dt_sla>
+        <dt_status>2021-02-10T13:37:33.767</dt_status>
+        <id_cerp>f3e01994-703b-4008-a855-a47ba751182f</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>725694</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>CARTOREL ANSTALT</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>13647847771</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>40314130000113</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292247039</nu_pedido>
+        <nu_requisicao>202129725694</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>RSA Engenharia LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T15:53:52.043</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T15:53:25.9</dt_sla>
+        <dt_status>2021-02-10T13:36:59.673</dt_status>
+        <id_cerp>b4e27361-ebf9-4d20-bf2c-6cd3f9c0ab35</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>725017</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>RSA ENGENHARIA LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>04407640000171</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>04407640000171</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292244701</nu_pedido>
+        <nu_requisicao>202129725017</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>JBV LOCACAO DE IMOVEIS LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T17:51:25.223</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T17:44:03.623</dt_sla>
+        <dt_status>2021-02-10T13:37:00.657</dt_status>
+        <id_cerp>ced5edad-bdba-476f-bf7c-4b16dad0db39</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>725413</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>FERNANDO ANTONIO CORREA TELLES</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>01315479000118</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>01197857737</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292246000</nu_pedido>
+        <nu_requisicao>202129725413</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+    <Pedido>
+        <cd_origem></cd_origem>
+        <ds_bairro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_complemento_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_obs_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_ds_tipo_doc_ext>Eletrônico</ds_pd_ds_tipo_doc_ext>
+        <ds_pd_ds_tipo_pedido_ext>Distribuição de Tit e Docs de Dividas - Protesto Período 10 anos</ds_pd_ds_tipo_pedido_ext>
+        <ds_pd_finalidade_ext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ds_pd_status_pedido_ext>PAGAMENTO REALIZADO</ds_pd_status_pedido_ext>
+        <ds_pd_tipo_ato_ext>Protestos#7º Registro de Distribuição da Capital</ds_pd_tipo_ato_ext>
+        <ds_requerente>PRIORI ASSESSORIA CONTÁBIL LTDA</ds_requerente>
+        <dt_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dt_nascimento>1900-01-01T00:00:00</dt_nascimento>
+        <dt_pagamento>2021-02-10T00:00:00</dt_pagamento>
+        <dt_pedido>2021-02-09T14:44:15.427</dt_pedido>
+        <dt_repasse>2021-02-10T00:00:00</dt_repasse>
+        <dt_sla>2021-02-14T14:44:01.567</dt_sla>
+        <dt_status>2021-02-10T13:36:58.907</dt_status>
+        <id_cerp>6f8eb525-bdb2-4f90-b735-0062e31dc8fb</id_cerp>
+        <id_cerp_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <id_pd_tipo_ato>1408</id_pd_tipo_ato>
+        <id_requisicao>724753</id_requisicao>
+        <id_servico>731</id_servico>
+        <nm_busca>CIDADE NOVA SUSHI RESTAURANTE LTDA</nm_busca>
+        <nm_livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_mae></nm_mae>
+        <nm_natureza_ato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nm_pai></nm_pai>
+        <nu_aleatorio_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_ato></nu_ato>
+        <nu_ato_origem>0</nu_ato_origem>
+        <nu_cpf_cnpj>04246194000160</nu_cpf_cnpj>
+        <nu_cpf_cnpj_busca>15280626000176</nu_cpf_cnpj_busca>
+        <nu_folha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_numero_b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_pedido>2021292243848</nu_pedido>
+        <nu_requisicao>202129724753</nu_requisicao>
+        <nu_rgi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_selo_original xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <nu_valor_total>94.8500</nu_valor_total>
+        <tp_logradouro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </Pedido>
+</arrayOfPedido>

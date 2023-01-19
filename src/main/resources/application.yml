@@ -1,0 +1,19 @@
+jsf:
+  primefaces: 
+    theme: omega
+  omnifaces:
+    faces-views-enabled: true
+
+server:
+  port: 8080
+  servlet.context-path: /mpbasicocartorio
+   
+spring:
+  h2:
+    console:
+      enabled: true
+      
+# There are the default property values so can be omitted if being used http://localhost:8545
+web3j:
+  client-address: http://localhost:8080
+  admin-client: false

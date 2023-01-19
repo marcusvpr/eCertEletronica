@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-06-22T12:07:14 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mpRelatorio_tabela_interna_dto" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6bbc4dfc-17e3-417c-8516-0f927d7546b3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="data"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="tipo" class="java.lang.String"/>
+	<field name="codigo" class="java.lang.String"/>
+	<field name="descricao" class="java.lang.String"/>
+	<group name="GroupTipo">
+		<groupExpression><![CDATA[$F{tipo}]]></groupExpression>
+		<groupHeader>
+			<band height="22">
+				<textField>
+					<reportElement x="40" y="3" width="121" height="15" forecolor="#1633F0" uuid="102ac4cd-b338-4da0-b25f-00b1a4ca7df4"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{tipo}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="10">
+				<line>
+					<reportElement x="40" y="6" width="489" height="1" uuid="d7c75e65-f88c-4d91-a5e6-2540ab3e5acc"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="29" y="12" width="440" height="39" uuid="36cb679f-52f2-4637-bdf5-2cfece784d1b"/>
+				<textElement textAlignment="Center">
+					<font size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Tabelas Internas]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="0" width="121" height="20" uuid="a3ad95c8-f7ae-4200-b88a-94ea6ae86128"/>
+				<text><![CDATA[Tipo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="171" y="0" width="149" height="20" uuid="01187ef8-8d8e-4123-ab5c-a54eda59cbfc"/>
+				<text><![CDATA[Código:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="0" width="200" height="20" uuid="b26f49cf-1b56-4074-be9e-c231ebb7c903"/>
+				<text><![CDATA[Descrição:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="171" y="3" width="149" height="16" uuid="b145298c-97e9-4e3f-ad43-38d4cd70ce54"/>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="3" width="200" height="16" uuid="af43ac39-fdad-4390-a21c-a6d623f50523"/>
+				<textFieldExpression><![CDATA[$F{descricao}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField evaluationTime="Report">
+				<reportElement x="486" y="15" width="43" height="20" uuid="d220ab9f-1892-4f01-a93f-8a8b139b2e88"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="464" y="15" width="16" height="14" uuid="190f4639-ff3d-4346-9476-c698eff35b3f"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ / ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="15" width="28" height="15" uuid="71c6c060-7d57-461a-bb16-ecc530e20331"/>
+				<text><![CDATA[Pag.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="424" y="15" width="35" height="21" uuid="6cbde4c9-3595-44d3-a447-63e24f816ec9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-8" y="14" width="48" height="14" uuid="22a678f1-7ef9-4b47-a1d3-ae61f2563bbb"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Data:]]></text>
+			</staticText>
+			<textField pattern="d/M/yyyy H:mm">
+				<reportElement x="50" y="14" width="115" height="18" uuid="00ec98d6-3247-4ab1-accc-6981017e9d6e"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

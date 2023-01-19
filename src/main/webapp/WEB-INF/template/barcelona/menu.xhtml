@@ -1,0 +1,31 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pa="http://primefaces.org/barcelona">
+    
+    <div class="layout-sidebar #{guestPreferences.darkMenu ? 'layout-sidebar-dark': ''}">
+        <pa:tabMenu>
+            <pa:tab icon="home" title="Home">
+                <h:form id="menu-form">
+                    <pa:menu widgetVar="me">
+                        <p:menuitem id="um_sistemaConfigX" value="Sistema Configuração" icon="&#xE8B8;"
+                        	outcome="/admin/sistemaConfigs/mpSistemaConfig" rendered="#{mpSeguranca.admins}" />
+                        <p:menuitem id="um_usuario" value="Usuário" icon="&#xe853;"
+                        	outcome="/admin/usuarios/mpCadastroUsuario" rendered="#{mpSeguranca.admins}" />
+                        <p:menuitem id="um_certidaoEletronica" value="Certidão Eletrônica" icon="&#xE871;" 
+                        	outcome="/user/eCartorioRJ/mpServiceWS.xhtml"/>
+                        <p:menuitem id="um_SeloEletronicoXML" value="Gera Selo Eletrônico XML" icon="&#xe915;" 
+                        	outcome="/user/eCartorioRJ/mpSeloEletronicoXml.xhtml"/>
+                        <p:menuitem id="um_converteXML" value="Converte XML x TXT" icon="&#xe915;" rendered="false"
+                        	outcome="/user/eCartorioRJ/mpServiceXmlTxt.xhtml"/>
+                    </pa:menu>
+                </h:form>
+            </pa:tab>
+        </pa:tabMenu>
+                
+    </div>
+    
+</ui:composition>

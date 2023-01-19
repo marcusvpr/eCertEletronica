@@ -1,0 +1,108 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pa="http://primefaces.org/barcelona">
+
+    <ui:param name="root" value="#{request.contextPath}" />
+    
+    <div class="topbar">
+        <div class="logo">
+            <h:link outcome="/dashboard">
+                <p:graphicImage name="images/logo7Ofx.png" library="barcelona-layout" />
+            </h:link>
+        </div>
+        
+        <p:graphicImage name="images/logo-text-7of.svg" library="barcelona-layout" styleClass="app-name"/>
+        
+        <a id="topbar-menu-button" href="#">
+            <i class="fa fa-bars"></i>
+        </a>
+        
+        <ul class="topbar-menu fadeInDown animated">
+            <li class="profile-item">
+                <a id="topbar-usermenu-button" href="#">                            
+                    <div class="profile-image">
+                        <p:graphicImage name="images/profile-image.png" library="barcelona-layout" />
+                    </div>
+                    <div class="profile-info">
+                        <span class="topbar-item-name profile-name">#{mpSeguranca.getUsuarioLogado()}</span>
+                    </div>
+                </a>
+                
+                <ul id="topbar-usermenu" class="usermenu">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-fw fa-cog"></i>
+                            <span class="topbar-item-name">Perfil</span>
+                            <i class="fa fa-angle-down menu-arrow"></i>
+                        </a>
+                        <ul>
+                            <li role="menuitem">
+                                <a href="#" onclick="PF('senhaTrocaDialog').show()">
+                                    <i class="fa fa-fw fa-key"></i>
+                                    <span>Alterar Senha</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="https://#{mpSeguranca.freshdeskURL}" target="_blank">
+                                    <i class="fa fa-fw fa-question"></i>
+                                    <span>Help Desk</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <li role="menuitem">
+                            <a href="#{root}/Logout">
+                                <i class="fa fa-fw fa-power-off"></i>
+                                <span>Sair (Logout)</span>
+                            </a>
+                        </li>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+        <p:dialog header="Troca Senha" widgetVar="senhaTrocaDialog" id="senhaTrocaDialog" 
+        				responsive="true" modal="true" showEffect="blind" hideEffect="explode" resizable="false">
+           <p:outputPanel id="senhaDetail" style="text-align:center;">
+    
+			<h:form>
+				<h:panelGroup id="envioPanelSenhaTroca">
+
+					<p:messages id="messagePsw" autoUpdate="false" />
+				  
+					<h:panelGrid columns="1">			
+						<p:password id="trocaSenhaAtual" placeholder="Senha Atual"
+											value="#{mpSeguranca.trocaSenhaAtual}" />
+						<p:password id="trocaSenhaNova" placeholder="Senha Nova" feedback="true"
+											value="#{mpSeguranca.trocaSenhaNova}" />
+						<p:password id="trocaSenhaNovaConfirma" placeholder="Senha Confirma"
+											value="#{mpSeguranca.trocaSenhaNovaConfirma}" />
+					</h:panelGrid>
+
+					<!-- oncomplete="tratarEnvioSenhaTroca(args)" -->
+
+					<p:commandButton value="Enviar"
+							action="#{mpSeguranca.enviaSenhaTroca}" id="enviaSenhaTroca"
+							update="messagePsw" process="@this envioPanelSenhaTroca"
+							styleClass="ui-confirmdialog-yes"
+							icon="ui-icon-check fa fa-check Fs14 white" />
+				</h:panelGroup>					
+			</h:form>
+		  </p:outputPanel>
+		</p:dialog>
+		
+<script>
+/*Função responsavel por fechar o dialog após a inclusão*/
+function tratarEnvioSenhaTroca(args) {
+	if(!args.validationFailed){
+		PF('senhaTrocaDialog').hide();
+	}
+}
+</script>
+    
+</ui:composition>

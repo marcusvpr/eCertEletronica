@@ -1,0 +1,369 @@
+body {
+    .ui-dialog {
+        &.ui-shadow {
+            @include overlay-content-shadow();
+        }
+        
+        .ui-dialog-titlebar {
+            background-color: #ffffff;
+            color: $textColor;
+            padding: $headerPadding;
+            
+            .ui-dialog-title {
+                font-weight: 700;
+            }
+            
+            .ui-dialog-titlebar-icon {
+                padding: 0;
+                @include border-radius(50%);
+                @include transition(background-color .3s);
+                
+                &.ui-state-hover, &.ui-state-focus {
+                    @include hover-element();
+                }
+                
+                .ui-icon {
+                    color: $textSecondaryColor;
+                }
+                
+                .ui-icon-extlink {
+                    @include icon_override('fullscreen');
+                }
+                
+                .ui-icon-newwin {
+                    @include icon_override('fullscreen_exit');
+                }
+            }
+        }
+        
+        .ui-dialog-buttonpane, .ui-dialog-footer {
+            text-align: right;
+            
+            .ui-button {
+                background-color: #ffffff;
+                color: $textColor;
+                @include no-shadow();
+                
+                .ui-icon {
+                    color: $textSecondaryColor;
+                }
+                
+                &.ui-state-hover {
+                    @include hover-element();
+                }
+                
+                &.secondary {
+                    background-color: $accentColor;
+                    color: $accentTextColor;
+
+                    &.ui-state-hover {
+                        background-color: $accentDarkColor;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten($accentColor,10%);
+                    }
+
+                    .ui-icon {
+                        color: $accentTextColor;
+                    }
+                }
+
+                &.blue-grey-btn {
+                    background-color: #607D8B;
+                    color: $buttonTextColor;
+
+                    &.ui-state-hover {
+                        background-color: #37474F;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#607D8B,10%);
+                    }
+                }
+
+                &.cyan-btn {
+                    background-color: #00BCD4;
+                    color: $buttonTextColor;
+
+                    &.ui-state-hover {
+                        background-color: #00838F;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#00BCD4,10%);
+                    }
+                }
+
+                &.teal-btn {
+                    background-color: #009688;
+                    color: $buttonTextColor;
+
+                    &.ui-state-hover {
+                        background-color: #00695C;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#009688,10%);
+                    }
+                }
+
+                &.red-btn {
+                    background-color: #F44336;
+                    color: $buttonTextColor;
+
+                    &.ui-state-hover {
+                        background-color: #C62828;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#F44336,10%);
+                    }
+                }
+
+                &.green-btn {
+                    background-color: #4CAF50;
+                    color: $buttonTextColor;
+
+                    &.ui-state-hover {
+                        background-color: #2E7D32;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#4CAF50,10%);
+                    }
+                }
+
+                &.deep-orange-btn {
+                    background-color: #FF5722;
+                    color: $buttonTextColor;
+
+                    &.ui-state-hover {
+                        background-color: #D84315;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#FF5722,10%);
+                    }
+                }
+
+                &.purple-btn {
+                    background-color: #673AB7;
+                    color: $buttonTextColor;
+
+                    &.ui-state-hover {
+                        background-color: #4527A0;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#673AB7,10%);
+                    }
+                }
+
+                &.pink-btn {
+                    background-color: #E91E63;
+                    color: $buttonTextColor;
+
+                    &.ui-state-hover {
+                        background-color: #AD1457;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#E91E63,10%);
+                    }
+                }
+
+                &.amber-btn {
+                    background-color: #FFC107;
+                    color: #212121;
+
+                    &.ui-state-hover {
+                        background-color: #FF8F00;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#FFC107,10%);
+                    }
+                }
+
+                &.orange-btn {
+                    background-color: #FF9800;
+                    color: $buttonTextColor;
+
+                    &.ui-state-hover {
+                        background-color: #EF6C00;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#FF9800,10%);
+                    }
+                }
+
+                &.brown-btn {
+                    background-color: #795548;
+                    color: $buttonTextColor;
+
+                    &.ui-state-hover {
+                        background-color: #4E342E;   
+                    }
+
+                    &.ui-state-focus {
+                        outline: 0 none;
+                        background-color: lighten(#795548,10%);
+                    }
+                }
+
+                &.flat {
+                    @include no-shadow();
+                }
+            }
+        }
+        
+        .ui-confirm-dialog-severity {
+            margin: 0px 12px;
+        }
+    }
+
+    .ui-sidebar {
+        .ui-sidebar-close {
+            &:hover {
+                padding: 1px;
+            }
+        }
+
+        .ui-button {
+            width: auto;
+        }
+    }
+    
+    .ui-lightbox {
+        &.ui-shadow {
+            @include overlay-content-shadow();
+        }
+        
+        .ui-lightbox-caption {
+            padding: $headerPadding;
+            
+            .ui-lightbox-caption-text {
+                margin: 0;
+            }
+            
+            .ui-lightbox-close {
+                @include border-radius(50%);
+                @include transition(background-color .3s);
+                padding: 0;
+                margin: 0;
+                width: $iconWidth;
+                height: $iconHeight;
+                            
+                &.ui-state-hover {
+                    @include hover-element-primary();
+                    padding: 0;
+                }
+            }
+        }
+        
+        .ui-lightbox-content-wrapper {
+            .ui-lightbox-nav-right, .ui-lightbox-nav-left {
+                top: 40%;
+                
+                .ui-icon {
+                    @include transition(color .3s);
+                    font-size: 48px;
+                    color: $primaryLightColor;
+                }
+                
+                &:hover {
+                    .ui-icon {
+                        color: #ffffff;
+                    }
+                }
+            }
+            
+            .ui-lightbox-nav-right {
+                right: 24px;
+            }
+        }
+    }
+    
+    .ui-overlaypanel {
+        &.ui-shadow {
+            @include overlay-content-shadow();
+        }
+        
+        .ui-overlaypanel-close {
+            background-color: $accentColor;
+            @include border-radius(50%);
+            @include transition(background-color .3s);
+            padding: 2px 4px;
+            right: -16px;
+            top: -16px;
+            @include content-shadow();
+            
+            span {
+                color: $accentTextColor;
+                
+                &:before {
+                    position: relative;
+                    top: 2px;
+                }
+            }
+            
+            &.ui-state-hover {
+                background-color: $accentDarkColor;
+            }
+        }
+    }
+    
+    .ui-tooltip {
+        @include opacity(.9);
+        font-size: $fontSize - 2px;
+        
+        .ui-tooltip-text {
+            background-color: #323232;
+            @include overlay-content-shadow();
+        }
+        
+        &.ui-tooltip-top {
+            .ui-tooltip-arrow {
+                border-top-color: #323232;
+            }
+        }
+        
+        &.ui-tooltip-bottom {
+            .ui-tooltip-arrow {
+                border-bottom-color: #323232;
+            }
+        }
+        
+        &.ui-tooltip-left {
+            .ui-tooltip-arrow {
+                border-left-color: #323232;
+            }
+        }
+        
+        &.ui-tooltip-right {
+            .ui-tooltip-arrow {
+                border-right-color: #323232;
+            }
+        }
+    }
+    
+    .ui-state-error,
+    .ui-widget.ui-state-error,
+    .ui-widget-content .ui-state-error, 
+    .ui-widget-header .ui-state-error {
+        border-color: #e62a10;
+    }
+}

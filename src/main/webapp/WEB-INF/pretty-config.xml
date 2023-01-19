@@ -1,0 +1,58 @@
+<pretty-config xmlns="http://ocpsoft.org/prettyfaces/3.3.3">
+
+	<url-mapping id="Dashboard">
+		<pattern value="/Dashboard" />
+		<view-id value="/dashboard.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="Logout">
+		<pattern value="/Logout" />
+		<view-id value="/mpLogout.xhtml" /> 
+	</url-mapping>
+
+	<url-mapping id="Dolar">
+		<pattern value="/Dolar" />
+		<view-id value="/admin/dolars/mpCadastroDolar.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="TabelaInterna">
+		<pattern value="/TabelaInterna" />
+		<view-id value="/admin/tabelaInternas/mpCadastroTabelaInterna.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="Usuario">
+		<pattern value="/Usuario" />
+		<view-id value="/admin/usuarios/mpCadastroUsuario.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="RelatorioTabelaInterna">
+		<pattern value="/RelatorioTabelaInterna" />
+		<view-id value="/admin/tabelaInternas/MpRelatorioTabelaInterna.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="CertidaoEletronica">
+		<pattern value="/CertidaoEletronica" />
+		<view-id value="/user/eCartorioRJ/mpServiceWS.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="SeloEletronicoXml">
+		<pattern value="/SeloEletronicoXml" />
+		<view-id value="/user/eCartorioRJ/mpSeloEletronicoXml.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="ConverteXML">
+		<pattern value="/ConverteXML" />
+		<view-id value="/user/eCartorioRJ/mpServiceXmlTxt.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="404">
+		<pattern value="/404" />
+		<view-id value="/404.html" />
+	</url-mapping>
+
+	<url-mapping id="500">
+		<pattern value="/500" />
+		<view-id value="/500.html" />
+	</url-mapping>
+									
+</pretty-config>

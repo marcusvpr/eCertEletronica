@@ -1,0 +1,36 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/template/mpLayout.xhtml">
+
+	<ui:define name="content">
+
+		<h:form id="frm">
+			<p:panel id="panCC" header="Relatório Tabela Interna"
+				closable="true" style="width:90%">
+				<p:ajax event="close" listener="#{mpRelatorioTabelaInterna.mpFechar}" />
+
+				<p:messages autoUpdate="true" closable="true" />
+	
+				<p:panelGrid columns="3" layout="grid"
+					style="border:0px !important; background:none;"
+					styleClass="ui-panelgrid-blank">
+	
+					<p:outputLabel />
+					<p:commandButton value="Emitir Relatório" icon="ui-icon-search"
+						ajax="false" action="#{mpRelatorioTabelaInternaController.emitir}" />
+					<p:outputLabel />
+					<p:outputLabel />
+					<p:commandButton value="Emitir Relatório DTO" icon="ui-icon-search"
+						ajax="false" action="#{mpRelatorioTabelaInternaController.emitirDTO}" />
+					<p:outputLabel />
+	
+				</p:panelGrid>
+			</p:panel>
+		</h:form>
+
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,158 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+    template="/WEB-INF/template/barcelona/template.xhtml">
+
+	<ui:define name="content">
+
+		<f:metadata>
+			<f:viewAction action="#{mpUsuarioController.inicializar}" />
+		</f:metadata>
+
+		<h:form id="frm">
+			<p:panel header="Cadastro de #{mpUsuarioController.txtTitulo}" closable="true">
+				<p:ajax event="close" listener="#{mpUsuarioController.mpFechar}" />
+
+				<div class="container">
+					<p:tabView id="tabViewCP">
+
+						<p:tab title="Cadastro">
+							<input type="hidden" name="${_csrf.parameterName}"
+								value="${_csrf.token}" />
+
+							<div class="row">
+								<div class="col-md-6">
+									<p:messages id="message" autoUpdate="false" showDetail="false" />
+								</div>
+							</div>
+
+							<p:panel header=". Modo: #{mpUsuarioController.txtModoTela}">
+								<f:facet name="actions">
+									<ui:include src="mpBotoesUsuario.xhtml" />
+								</f:facet>
+
+								<div class="container" style="margin-top: 5px;"></div>
+
+								<p:tabView id="tabViewC">
+
+									<p:tab title="Dados">
+										<div class="ui-fluid">
+											<p:panelGrid columns="3"
+												columnClasses="ui-grid-col-4,ui-grid-col-4,ui-grid-col-4"
+												layout="grid" styleClass="ui-panelgrid-blank">
+
+												<h:panelGroup id="pgUsername">
+													<p:outputLabel value="Nome Usuário(Login): " />
+													<p:inputText id="username" placeholder="Nome Usuário"
+														maxlength="50"
+														readonly="#{mpUsuarioController.indEditavel}"
+														value="#{mpUsuarioController.mpUser.username}">
+														<f:validateLength maximum="50" />
+														<p:clientValidator event="keyup" />
+													</p:inputText>
+												</h:panelGroup>
+												<h:panelGroup id="pgEmail">
+													<p:outputLabel value="E-mail: " />
+													<p:inputText id="email" placeholder="E-mail"
+														maxlength="150"
+														readonly="#{mpUsuarioController.indEditavel}"
+														value="#{mpUsuarioController.mpUser.email}">
+														<f:validateLength maximum="150" />
+														<p:clientValidator event="keyup" />
+													</p:inputText>
+												</h:panelGroup>
+												<h:panelGroup id="pgPassword">
+													<p:outputLabel value="Senha: " />
+													<p:password id="password" placeholder="Senha" maxlength="50"
+														readonly="#{mpUsuarioController.indEditavel}"
+														value="#{mpUsuarioController.senha}">
+														<f:validateLength maximum="50" />
+														<p:clientValidator event="keyup" />
+													</p:password>
+												</h:panelGroup>
+
+											</p:panelGrid>
+
+											<p:panel header="Perfil:" closable="true">
+												<p:panelGrid columns="2" layout="grid"
+													style="border:0px !important; background:none;"
+													styleClass="ui-panelgrid-blank">
+													<p:selectManyCheckbox layout="responsive" columns="1"
+														converter="omnifaces.SelectItemsConverter"
+														disabled="#{mpUsuarioController.indEditavel}"
+														value="#{mpUsuarioController.mpUser.mpRoles}">
+														<f:attribute name="collectionType"
+															value="java.util.ArrayList" />
+														<f:selectItems value="#{mpUsuarioController.mpRoleList}"
+															var="mpRole" itemLabel="#{mpRole.name}"
+															itemValue="#{mpRole}" />
+													</p:selectManyCheckbox>
+													<p:spacer />
+												</p:panelGrid>
+											</p:panel>
+
+										</div>
+									</p:tab>
+
+								</p:tabView>
+
+							</p:panel>
+						</p:tab>
+						
+						<p:tab title="Pesquisa">
+
+							<div class="container">
+							
+								<p:commandButton value="Exportar para XLS" ajax="false"
+																icon="fa fa-file-excel-o Fs14 red">
+									<p:dataExporter type="xls" target="dttPesqU" fileName="mpUsuarios"
+										postProcessor="#{mpUsuarioController.posProcessarXls}" />
+								</p:commandButton>									
+									
+								<p:dataTable  id="dttPesqU" var="mpUser"
+									value="#{mpUsuarioController.mpUserList}" widgetVar="mpUsuarioTable"
+									emptyMessage="Nenhum #{mpUsuarioController.txtTitulo}... encontrado!"
+									filteredValue="#{mpUsuarioController.filtroMpUserList}"
+									paginator="true" paginatorAlwaysVisible="false"
+									paginatorPosition="bottom" rows="10">
+
+									<p:column headerText="Nome Usuário(Login)" filterBy="#{mpUser.username}"
+										filterMatchMode="contains">
+										<h:outputText value="#{mpUser.username}" />
+									</p:column>
+									<p:column headerText="E-mail" filterBy="#{mpUser.email}"
+										filterMatchMode="contains">
+										<h:outputText value="#{mpUser.email}" />
+									</p:column>
+
+									<p:column headerText="Ação" style="text-align:center">
+										<p:commandButton title="Edita registro" icon="ui-icon-check"
+											action="#{mpUsuarioController.mpView}" process="@this"
+											update="@form"
+											actionListener="#{mpUsuarioController.mpListener}">
+											<f:attribute name="UsuarioSelecionado" value="#{mpUser}" />
+										</p:commandButton>
+										<p:commandButton title="Exclui registro" icon="ui-icon-trash"
+											oncomplete="PF('confirmacaoExclusaoR').show()"
+											process="@this"
+											update=":frm:tabViewCP:confirmacaoExclusaoDialogR"
+											actionListener="#{mpUsuarioController.mpListener}">
+											<f:attribute name="UsuarioSelecionado" value="#{mpUser}" />
+										</p:commandButton>
+									</p:column>
+
+								</p:dataTable>
+							</div>
+
+						</p:tab>
+
+					</p:tabView>
+				</div>
+			</p:panel>
+		</h:form>
+	</ui:define>
+
+</ui:composition>

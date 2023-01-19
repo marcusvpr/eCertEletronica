@@ -1,0 +1,137 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/template/mpLayout.xhtml">
+
+	<ui:define name="content">
+
+		<f:metadata>
+			<f:viewAction action="#{mpTabelaInternaController.inicializar}" />
+		</f:metadata>
+
+		<h:form id="frm">
+			<p:panel header="Cadastro de #{mpTabelaInternaController.txtTitulo}" closable="true">
+				<p:ajax event="close" listener="#{mpTabelaInternaController.mpFechar}" />
+
+				<div class="container">
+					<p:tabView id="tabViewCP">
+
+						<p:tab title="Cadastro">
+							<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+
+							<div class="row">
+								<div class="col-md-6">
+									<p:messages id="message" autoUpdate="false" showDetail="false" />
+								</div>
+							</div>
+
+							<p:panel header=". Modo: #{mpTabelaInternaController.txtModoTela}">
+								<f:facet name="actions">
+									<ui:include src="mpBotoesTabelaInterna.xhtml" />
+								</f:facet>
+
+								<div class="container" style="margin-top: 5px;"></div>
+
+								<p:tabView id="tabViewC">
+
+									<p:tab title="Dados">
+								      <div class="ui-fluid">
+    									<p:panelGrid columns="3" 
+    										columnClasses="ui-grid-col-4,ui-grid-col-4,ui-grid-col-4" 
+    										layout="grid" styleClass="ui-panelgrid-blank">
+
+											<h:panelGroup id="pgTipoTabela">
+												<p:outputLabel value="Tipo Tabela: " />
+												<p:selectOneMenu id="mpTipoTabelaInterna"
+													disabled="#{mpTabelaInternaController.indEditavel}"
+													value="#{mpTabelaInternaController.mpTabelaInterna.mpTipoTabelaInterna}">
+													<f:selectItem itemLabel="Selecione o Tipo de Tabela" />
+													<f:selectItems
+														value="#{mpTabelaInternaController.mpTipoTabelaInternaList}"
+														var="mpTipoTabelaInterna"
+														itemValue="#{mpTipoTabelaInterna}"
+														itemLabel="#{mpTipoTabelaInterna.descricao}" />
+												</p:selectOneMenu>
+											</h:panelGroup>
+
+											<h:panelGroup id="pgCodigo">
+												<p:outputLabel value="Código: " />
+												<p:inputText id="codigo"
+													required="#{mpTabelaInternaController.indEditavel}"
+													validatorMessage="Informar Código" placeholder="Codigo"
+													value="#{mpTabelaInternaController.mpTabelaInterna.codigo}" />
+											</h:panelGroup>
+
+											<h:panelGroup id="pgDescricao">
+												<p:outputLabel value="Descrição: "  />
+												<p:inputText id="descricao"
+													required="#{mpTabelaInternaController.indEditavel}"
+													validatorMessage="Informar Descrição"
+													placeholder="Descrição"
+													value="#{mpTabelaInternaController.mpTabelaInterna.descricao}" />
+											</h:panelGroup>
+
+										</p:panelGrid>
+									   </div>
+									</p:tab>
+
+									<p:tab title="Pesquisa">
+			
+										<div class="container">
+											<p:dataTable var="mpTabelaInterna" 
+																		value="#{mpTabelaInternaController.mpTabelaInternaList}"
+												widgetVar="mpTabelaInternaTable" 
+												emptyMessage="Nenhuma #{mpTabelaInternaController.txtTitulo}... encontrada!"
+												filteredValue="#{mpTabelaInternaController.filtroMpTabelaInternaList}"
+												paginator="true" paginatorAlwaysVisible="false"
+												paginatorPosition="bottom" rows="10">
+			
+												<p:column headerText="Tipo Tabela" sortBy="#{mpTabelaInterna.mpTipoTabelaInterna}"
+													filterBy="#{mpTabelaInterna.mpTipoTabelaInterna.descricao}" 
+																										filterMatchMode="contains">
+													<h:outputText value="#{mpTabelaInterna.mpTipoTabelaInterna.descricao}" />
+												</p:column>
+												<p:column headerText="Código" sortBy="#{mpTabelaInterna.codigo}"
+													filterBy="#{mpTabelaInterna.codigo}" filterMatchMode="contains">
+													<h:outputText value="#{mpTabelaInterna.codigo}" />
+												</p:column>
+												<p:column headerText="Descrição" sortBy="#{mpTabelaInterna.descricao}"
+													filterBy="#{mpTabelaInterna.descricao}" filterMatchMode="contains">
+													<h:outputText value="#{mpTabelaInterna.descricao}" />
+												</p:column>
+			
+												<p:column headerText="Ação" style="text-align:center">
+													<p:commandButton title="Edita registro" icon="ui-icon-check"
+														action="#{mpTabelaInternaController.mpView}"
+														process="@this" update="@form"
+														actionListener="#{mpTabelaInternaController.mpListener}">
+														<f:attribute name="TabelaInternaSelecionado" value="#{mpTabelaInterna}" />
+													</p:commandButton>
+													<p:commandButton title="Exclui registro" icon="ui-icon-trash"
+														oncomplete="PF('confirmacaoExclusaoR').show()"
+														process="@this"
+														update=":frm:tabViewCP:confirmacaoExclusaoDialogR"
+														actionListener="#{mpTabelaInternaController.mpListener}">
+														<f:attribute name="TabelaInternaSelecionado" value="#{mpTabelaInterna}" />
+													</p:commandButton>
+												</p:column>
+			
+											</p:dataTable>
+										</div>
+			
+									</p:tab>
+								</p:tabView>
+
+							</p:panel>
+						</p:tab>
+
+					</p:tabView>
+				</div>
+			</p:panel>
+		</h:form>
+	</ui:define>
+
+</ui:composition>

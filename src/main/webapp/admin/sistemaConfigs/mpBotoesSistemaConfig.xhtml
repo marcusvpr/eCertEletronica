@@ -1,0 +1,69 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<div>
+		<p:toolbar>
+			<p:toolbarGroup>
+					
+	          <div class="form-group">
+	            <div class="col-sm-12">
+            		<h:panelGroup rendered="#{mpSistemaConfigController.indEditavel}">
+						<p:commandButton title="Novo registro" icon="ui-icon-document"
+							action="#{mpSistemaConfigController.mpNew}" process="@this" update="@form" />
+            			<h:panelGroup rendered="#{mpSistemaConfigController.editando}">
+							<p:commandButton title="Edita registro" icon="ui-icon-pencil"
+								action="#{mpSistemaConfigController.mpEdit}" process="@this" update="@form" /> 
+							<p:commandButton title="Exclui registro" icon="ui-icon-trash"
+								oncomplete="PF('wvcdlogExclusaoSistemaConfig').show()" process="@this"
+								update=":frmSC:tabvSC:cdlogExclusaoSC" />
+						</h:panelGroup>
+					</h:panelGroup>
+					
+					<h:panelGroup rendered="#{mpSistemaConfigController.indEditavel}">
+						<span class="ui-separator">
+						 	<span class="fa fa-ellipsis-v leaden" />
+						</span>
+						<p:commandButton title="Registro Inicial" update="@form" icon="ui-icon-skip-previous"
+							action="#{mpSistemaConfigController.mpTop}" process="@this" />	
+						<p:commandButton title="Registro Anterior" update="@form" icon="ui-icon-fast-rewind"
+							action="#{mpSistemaConfigController.mpPrev}" process="@this" />
+						<p:commandButton title="Registro Próximo" update="@form" icon="ui-icon-fast-forward"
+							action="#{mpSistemaConfigController.mpNext}" process="@this" />
+						<p:commandButton title="Registro Final" update="@form" icon="ui-icon-skip-next"
+							action="#{mpSistemaConfigController.mpBotton}" process="@this" />
+						<span class="ui-separator">
+						 	<span class="fa fa-ellipsis-v leaden" />
+						</span>
+						<p:commandButton title="Clone" update="@form" icon="ui-icon-content-copy"
+												action="#{mpSistemaConfigController.mpClone}" process="@this" />
+					</h:panelGroup>					
+															
+            		<h:panelGroup rendered="#{!mpSistemaConfigController.indEditavel}">
+						<p:commandButton title="Gravar registro" icon="ui-icon-save"
+							action="#{mpSistemaConfigController.mpGrava}" process="@form" update="@form" />
+						<p:commandButton title="Desfaz registro" icon="ui-icon-undo"
+							action="#{mpSistemaConfigController.mpDesfaz}" process="@this" update="@form" />
+					</h:panelGroup>
+		
+					<p:confirmDialog id="cdlogExclusaoSC" widgetVar="wvcdlogExclusaoSC" 
+						header="Exclusão da #{mpSistemaConfigController.txtTitulo}" responsive="true"
+						global="true" showEffect="fade" hideEffect="fade" message=
+						"Deseja excluir a #{mpSistemaConfigController.txtTitulo} ( #{mpSistemaConfigController.mpSistemaConfig.parametro}?">
+						<p:commandButton value="Não" styleClass="ui-confirmdialog-no"
+							onclick="PF('wvcdlogExclusaoSC').hide(); return false;" />
+						<p:commandButton value="Sim" update=":frmSC:tabvSC" id="yesButtonR"
+							oncomplete="PF('wvcdlogExclusaoSC').hide();"
+							actionListener="#{mpSistemaConfigController.mpDelete}" process="@this"
+							styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+					</p:confirmDialog>
+	            </div>
+	          </div>          
+
+			</p:toolbarGroup>
+		</p:toolbar>
+	</div>
+
+</ui:composition>

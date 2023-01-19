@@ -1,0 +1,245 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/template/barcelona/template.xhtml">
+
+	<ui:define name="title">Selo Eletrônico XML</ui:define>
+
+	<ui:define name="head">
+		<style type="text/css">
+.ui-selectoneradio.ui-grid-responsive .ui-grid-col-4,
+	.ui-selectmanycheckbox.ui-grid-responsive .ui-grid-col-4 {
+	padding-bottom: 10px;
+}
+</style>
+	</ui:define>
+
+	<ui:define name="content">
+
+		<h:outputScript name="static/js/print.min.js" target="head" />
+
+		<f:metadata>
+			<f:viewAction action="#{mpSeloEletronicoXmlController.inicializar}" />
+		</f:metadata>
+
+		<div class="ui-g">
+			<div class="ui-g-12">
+				<div class="card card-w-title">
+
+					<h:form id="frmCXT">
+						<p:panel id="panCXT"
+							header="Selo Eletrônico XML" closable="true">
+							<p:ajax event="close" listener="#{mpSeloEletronicoXmlController.sairWS}" />
+
+							<p:messages showDetail="false" closable="true">
+        						<p:autoUpdate />
+    						</p:messages>
+    													
+							<p:tabView id="tabViewCXT">
+
+								<p:tab id="tbPDF" title="Certidão - Upload PDFs">
+									<div class="ContainerIndent">
+									
+										<h:form id="form" enctype="multipart/form-data">
+				
+					     					<br />						 
+										    <p:fileUpload id="btnUp" fileLimit="500" sizeLimit="161920000" update="@form"
+											    	fileUploadListener="#{mpSeloEletronicoXmlController.uploadPdf}" 
+											    	allowTypes="/(\.|\/)(pdf|Pdf|PDF)$/" 
+    												invalidFileMessage="São permitidas somente arquivos (.PDF)"											    	
+											    	mode="advanced" dragDropSupport="false" auto="false" multiple="true"
+											    	cancelLabel="Cancelar" label="Escolher... ">
+			                				</p:fileUpload>						    																	
+					     					<br />						 
+						                	<p:outputLabel value="Data Movimento:" />
+											<p:calendar pattern="dd/MM/yyyy" mask="true"
+												locale="pt" timeZone="America/Sao_Paulo"
+												value="#{mpSeloEletronicoXmlController.dataMovimento}" />
+					     					<br />						 
+					     					<br />						 
+							          		<p:commandButton value="Processar" ajax="false"
+							          				actionListener="#{mpSeloEletronicoXmlController.uploadPdfX}" />
+												<!-- rendered="xx mpSeloEletronicoXmlController.indFile xx}" -->
+										</h:form>	
+									
+									</div>
+								</p:tab>
+
+								<p:tab id="tbXmlTxt" title="Converte - XML para TXT" rendered="false">
+									<div class="ContainerIndent">
+										<span class="DispInlBlock Fright FloatNoneOnMobile"> 
+											<p:commandButton value="Lista Arquivos XMLs ..." 
+												icon="ui-icon-search" process="@this" 
+ 												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoXmlId"								
+												action="#{mpSeloEletronicoXmlController.listaPathArquivoXml}" />
+											<p:spacer width="100" height="10" />
+											<p:commandButton process="arquivoXmlId @this" 
+												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoXmlId"
+											 	value="Gera Arquivos Xmls Selecionados..." icon="ui-icon-input"
+												action="#{mpSeloEletronicoXmlController.listaPathArquivoXmlSel}" />
+											<p:spacer width="100" height="10" />
+											<p:commandButton process="arquivoXmlId @this" 
+												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoXmlId"
+											 	value="Gera Relaório Arquivos Xmls Selecionados..." icon="ui-icon-input"
+												action="#{mpSeloEletronicoXmlController.listaPathArquivoXmlSelPdf}" />
+											<p:spacer width="50" height="10" />
+										</span>
+									</div>
+
+									<div class="container">
+										<p:dataTable var="arquivoXml"  id="arquivoXmlId"
+											value="#{mpSeloEletronicoXmlController.arquivoXmlList}"
+											widgetVar="arquivoXmlTable"
+											emptyMessage="Nenhum Arquivo XML... retornado !"
+											paginator="true" paginatorAlwaysVisible="false"
+											paginatorPosition="bottom" rows="30"
+											selection="#{mpSeloEletronicoXmlController.arquivoXmlSelecionadoList}"
+											rowKey="#{arquivoXml}">
+
+									        <f:facet name="header">
+									            Arquivos XMLs
+									        </f:facet>
+									        <p:column selectionMode="multiple" style="width:16px;text-align:center"/>										
+
+											<p:column headerText="Nome Arquivo" sortBy="#{arquivoXml}"
+												filterBy="#{arquivoXml}" filterMatchMode="contains">
+												<h:outputText value="#{arquivoXml}" />
+											</p:column>
+
+											<p:column headerText="Ação" style="text-align:center">
+												<p:commandButton title="Gera TXT" icon="ui-icon-check"
+													action="#{mpSeloEletronicoXmlController.mpGeraTxt}" process="@this"
+													update=":frmCXT:messages"
+													actionListener="#{mpSeloEletronicoXmlController.mpListenerArquivoXml}">
+													<f:attribute name="arquivoXmlSelecionado" value="#{arquivoXml}" />
+												</p:commandButton>
+												<p:commandButton title="Gera Relatório" icon="ui-icon-print"
+													action="#{mpSeloEletronicoXmlController.mpGeraBancoPdf}" process="@this"
+													update=":frmCXT:messages"
+													actionListener="#{mpSeloEletronicoXmlController.mpListenerArquivoXml}">
+													<f:attribute name="arquivoXmlSelecionado" value="#{arquivoXml}" />
+												</p:commandButton>
+											</p:column>
+
+										</p:dataTable>
+
+									</div>
+
+								</p:tab>
+
+								<p:tab id="tbTxtXml" title="Converte - TXT para XML">
+									<div class="ContainerIndent">
+										<span class="DispInlBlock Fright FloatNoneOnMobile"> 
+											<p:commandButton value="Lista Arquivos TXTs ..." 
+												icon="ui-icon-search" process="@this" 
+ 												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoTxtId"								
+												action="#{mpSeloEletronicoXmlController.listaPathArquivoTxt}" />
+											<p:spacer width="100" height="10" />
+											<p:commandButton process="arquivoTxtId @this" 
+												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoTxtId"
+											 	value="Gera Arquivos Txts Selecionados..." icon="ui-icon-input"
+												action="#{mpSeloEletronicoXmlController.listaPathArquivoTxtSel}" />
+											<p:spacer width="50" height="10" />
+										</span>
+									</div>
+
+									<div class="container">
+										<p:dataTable var="arquivoTxt"  id="arquivoTxtId"
+											value="#{mpSeloEletronicoXmlController.arquivoTxtList}"
+											widgetVar="arquivoTxtTable"
+											emptyMessage="Nenhum Arquivo TXT... retornado !"
+											paginator="true" paginatorAlwaysVisible="false"
+											paginatorPosition="bottom" rows="30"
+											selection="#{mpSeloEletronicoXmlController.arquivoTxtSelecionadoList}"
+											rowKey="#{arquivoTxt}">
+
+									        <f:facet name="header">
+									            Arquivos TXTs
+									        </f:facet>
+									        <p:column selectionMode="multiple" style="width:16px;text-align:center"/>										
+
+											<p:column headerText="Nome Arquivo" sortBy="#{arquivoTxt}"
+												filterBy="#{arquivoTxt}" filterMatchMode="contains">
+												<h:outputText value="#{arquivoTxt}" />
+											</p:column>
+
+											<p:column headerText="Ação" style="text-align:center">
+												<p:commandButton title="Gera XML" icon="ui-icon-check"
+													action="#{mpSeloEletronicoXmlController.mpGeraXml}" process="@this"
+													 update=":frmCXT:messages"
+													actionListener="#{mpSeloEletronicoXmlController.mpListenerArquivoTxt}">
+													<f:attribute name="arquivoTxtSelecionado" value="#{arquivoTxt}" />
+												</p:commandButton>
+											</p:column>
+
+										</p:dataTable>
+
+									</div>
+
+								</p:tab>
+
+								<p:tab id="tbBancoPDF" title="Desmenbra PDF Banco">
+									<div class="ContainerIndent">
+										<span class="DispInlBlock Fright FloatNoneOnMobile"> 
+											<p:commandButton value="Lista Arquivos PDFs/Bancos ..." 
+												icon="ui-icon-search" process="@this" 
+ 												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoBancoPdfId"								
+												action="#{mpSeloEletronicoXmlController.listaPathArquivoBancoPdf}" />
+											<p:spacer width="100" height="10" />
+											<p:commandButton process="arquivoTxtId @this" 
+												update=":frmCXT:messages :frmCXT:tabViewCXT:arquivoBancoPdfId"
+											 	value="Gera Arquivos PDFs Selecionados..." icon="ui-icon-input"
+												action="#{mpSeloEletronicoXmlController.listaPathArquivoBancoSel}" />
+											<p:spacer width="50" height="10" />
+										</span>
+									</div>
+
+									<div class="container">
+										<p:dataTable var="arquivoBancoPdf"  id="arquivoBancoPdfId"
+											value="#{mpSeloEletronicoXmlController.arquivoBancoPdfList}"
+											widgetVar="arquivoBancoPdfTable"
+											emptyMessage="Nenhum Arquivo Banco.PDF... retornado !"
+											paginator="true" paginatorAlwaysVisible="false"
+											paginatorPosition="bottom" rows="30"
+											selection="#{mpSeloEletronicoXmlController.arquivoBancoPdfSelecionadoList}"
+											rowKey="#{arquivoBancoPdf}">
+
+									        <f:facet name="header">
+									            Arquivos Banco PDFs
+									        </f:facet>
+									        <p:column selectionMode="multiple" style="width:16px;text-align:center"/>										
+
+											<p:column headerText="Nome :"
+												filterBy="#{arquivoBancoPdf}" filterMatchMode="contains">
+												<h:outputText value="#{arquivoBancoPdf}" />
+											</p:column>
+
+											<p:column headerText="Ação" style="text-align:center">
+												<p:commandButton title="Gera PDF" icon="ui-icon-check"
+													action="#{mpSeloEletronicoXmlController.mpGeraBancoPdf}" process="@this" update=":frmCXT:messages"
+													actionListener="#{mpSeloEletronicoXmlController.mpListenerArquivoBancoPdf}">
+													<f:attribute name="arquivoBancoPdfSelecionado" value="#{arquivoBancoPdf}" />
+												</p:commandButton>
+											</p:column>
+
+										</p:dataTable>
+
+									</div>
+
+								</p:tab>
+
+							</p:tabView>
+
+						</p:panel>
+																    						
+					</h:form>
+
+				</div>
+			</div>
+		</div>
+
+	</ui:define>
+
+</ui:composition>

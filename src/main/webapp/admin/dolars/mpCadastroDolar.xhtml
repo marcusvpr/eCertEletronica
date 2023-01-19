@@ -1,0 +1,155 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/template/mpLayout.xhtml">
+
+	<ui:define name="content">
+
+		<f:metadata>
+			<f:viewAction action="#{mpDolarController.inicializar}" />
+		</f:metadata>
+
+		<h:form id="frm">
+			<p:panel header="Cadastro de #{mpDolarController.txtTitulo}" closable="true">
+				<p:ajax event="close" listener="#{mpDolarController.mpFechar}" />
+
+				<div class="container">
+					<p:tabView id="tabViewCP">
+
+						<p:tab title="Cadastro">
+							<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+
+							<div class="row">
+								<div class="col-md-6">
+									<p:messages globalOnly="true" />
+								</div>
+							</div>
+
+							<p:panel header=". Modo: #{mpDolarController.txtModoTela}">
+								<f:facet name="actions">
+									<ui:include src="mpBotoesDolar.xhtml" />
+								</f:facet>
+
+								<div class="container" style="margin-top: 5px;"></div>
+
+								<p:tabView id="tabViewC">
+
+									<p:tab title="Dados">
+								   	  <div class="ui-fluid">
+    									<p:panelGrid columns="3" columnClasses="ui-grid-col-4,ui-grid-col-4,ui-grid-col-4" 
+    										layout="grid" styleClass="ui-panelgrid-blank">
+
+											<h:panelGroup id="pgDataD">
+												<h:panelGroup id="pgDataD1"
+													rendered="#{mpDolarController.indEditavel}">
+													<p:outputLabel value="Data : " />
+													<p:inputText style="color:red"
+														value="#{mpDolarController.mpDolar.dataMovimento}">
+														<f:convertDateTime pattern="dd/MM/yyyy"
+															timeZone="America/Sao_Paulo" />
+													</p:inputText>
+												</h:panelGroup>
+												<h:panelGroup id="pgDataD2"
+													rendered="#{!mpDolarController.indEditavel}">
+													<p:outputLabel value="Data : " />
+													<p:calendar id="dataMovimento" showOn="button"
+														timeZone="America/Sao_Paulo" pattern="dd/MM/yyyy"
+														mask="true" locale="pt" placeholder="Data Movimento"
+														value="#{mpDolarController.mpDolar.dataMovimento}" />
+													<p:tooltip for="dataMovimento"
+														value="Data (Ex.: 31/03/2016)" />
+												</h:panelGroup>
+											</h:panelGroup>
+
+											<h:panelGroup id="pgValor">
+												<p:outputLabel value="Valor : " />
+												<p:inputText id="valor" placeholder="Valor" maxlength="10"
+													styleClass="moeda"
+													required="#{mpDolarController.indEditavel}"
+													validatorMessage="Informar Valor"
+													readonly="#{mpDolarController.indEditavel}"
+													value="#{mpDolarController.mpDolar.valor}">
+													<f:convertNumber maxFractionDigits="3"
+														minFractionDigits="3" />
+												</p:inputText>
+												<p:tooltip for="valor" value="Valor (Ex.: 3,231)" />
+											</h:panelGroup>
+
+											<h:panelGroup id="pgObs">
+												<p:outputLabel value="Observação: " />
+												<p:inputText id="obs" placeholder="Observação"
+													maxlength="155" readonly="#{mpDolarController.indEditavel}"
+													value="#{mpDolarController.mpDolar.observacao}">
+													<f:validateLength maximum="150" />
+													<p:clientValidator event="keyup" />
+												</p:inputText>
+												<p:tooltip for="obs" value="Observação" />
+											</h:panelGroup>
+
+										</p:panelGrid>
+									  </div>
+									</p:tab>
+
+									<p:tab title="Pesquisa">
+			
+										<div class="container">
+											<p:dataTable var="mpDolar" value="#{mpDolarController.mpDolarList}"
+												widgetVar="mpDolarTable" 
+												emptyMessage="Nenhum #{mpDolarController.txtTitulo}... encontrado!"
+												filteredValue="#{mpDolarController.filtroMpDolarList}"
+												paginator="true" paginatorAlwaysVisible="false"
+												paginatorPosition="bottom" rows="10">
+			
+												<p:column headerText="Data" sortBy="#{mpDolar.dataMovimento}"
+													filterBy="#{mpDolar.dataMovimento}" filterMatchMode="contains">
+													<h:outputText value="#{mpDolar.dataMovimento}">
+														<f:convertDateTime pattern="dd/MM/yyyy"
+															timeZone="America/Sao_Paulo" />
+													</h:outputText>
+												</p:column>
+												<p:column headerText="Valor" sortBy="#{mpDolar.valor}">
+													<h:outputText value="#{mpDolar.valor}">
+														<f:convertNumber type="currency" pattern="##,##0.000" />
+													</h:outputText>
+												</p:column>
+												<p:column headerText="Observação"
+													filterBy="#{mpDolar.observacao}" filterMatchMode="contains">
+													<h:outputText value="#{mpDolar.observacao}" />
+												</p:column>
+			
+												<p:column headerText="Ação" style="text-align:center">
+													<p:commandButton title="Edita registro" icon="ui-icon-check"
+														action="#{mpDolarController.mpView}"
+														process="@this" update="@form"
+														actionListener="#{mpDolarController.mpListener}">
+														<f:attribute name="DolarSelecionado" value="#{mpDolar}" />
+													</p:commandButton>
+													<p:commandButton title="Exclui registro" icon="ui-icon-trash"
+														oncomplete="PF('confirmacaoExclusaoR').show()"
+														process="@this"
+														update=":frm:tabViewCP:confirmacaoExclusaoDialogR"
+														actionListener="#{mpDolarController.mpListener}">
+														<f:attribute name="DolarSelecionado" value="#{mpDolar}" />
+													</p:commandButton>
+												</p:column>
+			
+											</p:dataTable>
+										</div>
+			
+									</p:tab>
+
+								</p:tabView>
+
+							</p:panel>
+						</p:tab>
+
+					</p:tabView>
+				</div>
+			</p:panel>
+		</h:form>
+	</ui:define>
+
+</ui:composition>
